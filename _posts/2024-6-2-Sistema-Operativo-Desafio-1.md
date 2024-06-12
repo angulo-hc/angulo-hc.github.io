@@ -15,7 +15,7 @@ Next you can update your site name, avatar and other options using the _config.y
 
 
 <div style="text-align: center;">
-  <img src="images/Sistema_Operativo/Desafio_1/VirtualBox/VirtualBox_3.png" alt="Descripción de la imagen">
+  <img src="https://github.com/angulo-hc/angulo-hc.github.io/blob/master/images/Sistema_Operativo/Desafio_1/VirtualBox/VirtualBox_3.png?raw=true" alt="Descripción de la imagen">
 </div>
 
 ![VirtualBox_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_1/VirtualBox/VirtualBox_4.png)
