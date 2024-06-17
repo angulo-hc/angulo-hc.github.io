@@ -49,7 +49,16 @@ para que nuestra máquina virtual reconozca en la red que está y de esta manera
 * Ingresa la puerta de enlace predeterminada en el campo "Puerta de
 enlace". Puede ser la dirección IP del router en tu red.
 * Ingresa las direcciones de servidor DNS si es necesario.
-Otra forma de saber la información de nuestra red es, desde la ventana de comandos ejecutamos !"#$%&/()=?¡*¨[Ñ_:;´´'0987¿'+´{ñ-.,12!"  
+
+**Paso 4:** Apliquemos los Cambios.
+* Haz clic en "Aceptar" para cerrar las ventanas de propiedades.
+
+**Paso 5:** Verifica la Configuración.
+* Para verificar la configuración, puedes abrir una ventana de símbolo del
+sistema y ejecutar el comando `ipconfig`. Asegúrate de que la dirección IP,
+la máscara de subred y la puerta de enlace se muestren correctamente.
+
+
 
 
 <a name="item3"></a>
