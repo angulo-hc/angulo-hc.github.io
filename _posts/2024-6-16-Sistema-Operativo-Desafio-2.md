@@ -1,5 +1,9 @@
+---
+layout: post
+title: Sistema Operativo - Desafío n°2
+---
+
 <a name="top"></a>
-# Sistema Operativo - Desafío n°2
 
 ## Índice
 
@@ -15,16 +19,14 @@
 Instalaremos los sistemas operativo Windows Server y windows 10, máquina cliente, en máquinas virtuales. Configuraremos la dirección IP del servidor y configuraremos en él el rol IIS para el protocolo HTTP. 
 En el entorno Internet Information Server (IIS) ejecutaremos configuraciones básicas a un servidor HTTP y FTP, mediante interfaz gráfica
 
+**Herramientas:** Virtual Box, Windows Server, Windows 10, FileZilla.
 
-
-#### Herramientas:
-Virtual Box, Windows Server, Windows 10, Fi.
 
 <a name="item2"></a>
 ### 2. Configuración de Servicios
-A continuación, onfiguraremos los servivios HTTP Y FTP en el servidor. Mdificaremos la página de bienvenida y activaremos el protocolo FTP.
+A continuación, configuraremos los servivios HTTP Y FTP en el servidor. Mdificaremos la página de bienvenida y activaremos el protocolo FTP.
 
-#### Configuraremos la IP del servidor de nuestra máquina virtual
+#### Configuración de la IP del servidor de una máquina virtual
 Todo servidor debe tener una dirección fija, estática, que le garantice la conectividad a internet y/o para poder entregar servicios de manera local a la red donde está alojado. Nos estamos refiriendo a la IP local, es decir, privada. La configuración de la dirección IP del servidor en una máquina virtual depende del sistema operativo que estemos utilizando. A continuación, veremos algunos pasos para configurar la dirección IP en una máquina virtual con Windows Server. Como 
 
 **Paso 1:** Accedamos a la Configuración de Red.
