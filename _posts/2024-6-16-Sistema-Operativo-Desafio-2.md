@@ -127,5 +127,3 @@ https://hc-angulo.github.io/memory-match-game/src
  <a href="" target="_blank">      
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/></a>
  </p>
-
-
