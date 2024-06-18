@@ -10,9 +10,10 @@ title: Sistema Operativo - Desafío n°2
 - [1. Resumen del desafío](#item1)
 - [2. Configuración de Servicios](#item2)
 - [3. Cliente FTP](#item3)
+- [4. Resolución de desafío](#item4) 
 - [4. Demo](#item4)
 - [5. Enlace](#item5)
-- [6. Herramientas](#item6) 
+- 
 
 <a name="item1"></a>
 ### 1. Resumen del desafío
@@ -101,7 +102,7 @@ remota, desde una computadora cliente, al servidor HTTP.
 
 
 **Paso 1:** Acceder al Administrador del Servidor.
-* Presiona la tecla `Win` y selecciona "Administrador del Servidor".
+* Presiona la tecla `Windows` y selecciona "Administrador del Servidor".
 
 **Paso 2:** Agrega el Rol IIS.
 * En el Administrador del Servidor, selecciona "Agregar roles y
@@ -113,11 +114,21 @@ para Servidor web (IIS)".
 * Haz clic en "Siguiente" y luego en "Instalar". Sigue los pasos para
 completar la instalación del rol IIS con el servicio FTP.
 
-**Paso 3:** Configura el Sitio FTP.
+**Paso 3:** Configura el Sitio Web
 * Una vez instalado IIS con el servicio FTP, abre el "Administrador de IIS".
+* En el Administrador de IIS, selecciona el nodo del servidor.
   selecciona el nodo del servidor. Para identificar el nodo del servidor, lo
   podemos hacer desde la terminal, ejecutando el comando `hostname`.
-* Haz clic en "Agregar sitio FTP" en el panel derecho.
+* Haz clic en "Agregar sitio" en el panel derecho.
+* Completa los detalles del sitio, incluyendo el nombre, la ruta física del
+  contenido del sitio y la configuración del puerto (por ejemplo, el puerto 80
+  para HTTP).
+* Haz clic en "Aceptar" para crear el sitio.
+
+**Paso 4:** Configura el sitio FTP
+* Seleccione algún *sitio* creado a partir del paso anterior. Para ilustrar este
+   paso, seleccionaremos el sitio web que existe por defecto.
+* Haz clic derecho es el sitio web en "Agregar sitio FTP" en el panel derecho.
 * Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
   contenido y la configuración del puerto (por ejemplo, el puerto 21 para
   FTP).
@@ -126,12 +137,12 @@ completar la instalación del rol IIS con el servicio FTP.
   permisos de acceso.
 * Haz clic en "Siguiente" y luego en "Finalizar".
 
-**Paso 5:** Verificar la Configuración.
- * Descarga FileZilla desde el sitio oficial: https://filezilla-project.org/
- * Instala FileZilla en tu máquina local.
-* Abre un cliente FTP (por ejemplo, FileZilla) en una máquina remota y
-  conecta al servidor FTP utilizando la dirección IP o nombre del servidor y
-  el puerto configurado.
+**Paso 5:** Verifica la Configuración de sitio web
+* Abre un navegador web y accede al sitio utilizando la dirección IP del
+  servidor o el nombre del servidor. Por ejemplo, http://localhost o
+  http://<dirección_ip_del_servidor>.
+
+
   
 
 <a name="item3"></a>
@@ -207,52 +218,33 @@ transferencia.
    sin errores.
 
 
-
-
-* Solución: Crear un display de bienvenida con un botón que permita acceder al juego.
-
-* Criterio mínimo de aceptación: Al hacer click en el botón _"Jugar"_, se produzca el display del juego.
-
-Product Backlog
-- Incorporar display de bienvenida y botones que guiarán al usuario en el juego.
-- Dar funcionalidad al botón para que lleve al usuario al display de juego.
-- Hacer una App _responsive_.
-
-
-**HU 2. "Como jugador quiero que tenga detalles relacionados con Pokémon, para poder encontrarlo coherente con mi búsqueda".**
-
-_CARACTERÍSTICAS: El usuario debe encontrar coherencia en el diseño de la aplicación y la tematica Pokémon ._
-
-* Solución: Crear un diseño acorde a los colores, elementos (ventanas de diálogo, pokeball, imágenes de pokemones, entre otras), y tipografía de pokémon.
-* Criterio mínimo de aceptación: Al visualizar la página se entienda el contexto de pokémon.
-
-Product Backlog
-- buscar fuentes creadoras de tipografia de pokémon. 
-- crear un nombre de la aplicación que se relacione con la temática de pokémon.
-- crear interfaz con colores de pokémon
-- incorporar elemento de diseño distintivo de pokémon en la cara frontal de las cartas.
-- crear mensaje emergente que se visualice como ventana de diálogo.
-
-
-**HU 3. "Como jugador quiero que sea de acceso rápido y sencillo, para poder disfrutar del juego lo más que sea posible en mi tiempo libre."**
-
-_CARACTERÍSTICAS: El usuario debe poder acceder rápido al juego, y que este sea intuitivo ._
-* Solución: crear una interfaz sencilla, sin tanto texto y con botones que guien al usuario en la funcionalidad del juego.
-* Criterio mínimo de aceptación: Deben existir dos botones, uno que nos lleve al display del juego, y otro que nos lleve al display de instrucciones.
-
-Product Backlog
-- crear botones con funcionalidad (juego, instrucciones, entre otras), para que el usuario pueda utilizarlos cuando requiere la información.
+ **Paso 5:** Verificar la Configuración .
+ * Descarga FileZilla desde el sitio oficial: https://filezilla-project.org/
+ * Instala FileZilla en tu máquina local.
+* Abre un cliente FTP (por ejemplo, FileZilla) en una máquina remota y
+  conecta al servidor FTP utilizando la dirección IP o nombre del servidor y
+  el puerto configurado.
 
 <a name="item4"></a>
+### 4. Resolución de desafío
+Modificaremos la página de web de bienvenida que se ilustra en ----. Esto lo haremos
+vía un cliente FTP que instalamos en el la sección 3.
+
+
+
+
 ### 4. Demo
 A continuación, encontrará un video ilustrativo de cómo se ejecuta la aplicación cuando se decide jugar una partida.
 
-https://github.com/Hilicarolina/SCL017-memory-match-game/assets/14808063/abe2bad1-13f9-426b-8f45-743362493d3a
+
 
 
 <a name="item5"></a>
-### 5. Enlace
-https://hc-angulo.github.io/memory-match-game/src 
+### 5. Enlaces
+* iso Windows server
+* iso windows 10
+* filezilla
+
 
 [Volver a índice](#top)
 
