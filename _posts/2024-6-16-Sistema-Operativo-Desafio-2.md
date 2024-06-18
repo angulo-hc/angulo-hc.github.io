@@ -39,9 +39,31 @@ adaptador".
 * Selecciona la conexión de red activa (puede llamarse "Ethernet" o
 "Conexión de área local").
 
+   ![ConfigIP_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_1.png)
+
+
+
 **Paso 3:** Configuremos la Dirección IP.
-* En las propiedades de la conexión, busca y selecciona "Protocolo de
-Internet versión 4 (TCP/IPv4)" y haz clic en "Propiedades".
+
+![ConfigIP_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_2.png)
+
+* Antes de introducir las configuraciones que indicaremos en las líneas que siguen,
+  si no conocemos la información solicitada, hacemos clic en "Detalles" en la imagen de
+  arriba y nos conducirá a
+
+  ![ConfigIP_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_3.png)
+
+  donde obtendremos toda la información que se nos solicitará.
+
+* De vuelta a la primera imagen del Paso 3, haz clic en "Propiedades" y tendrás algo
+  como la siguiente ilustración:
+  
+    ![ConfigIP_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_4.png)  
+
+* Selecciona "Protocolo de Internet versión 4 (TCP/IPv4)" y haz doble clic. 
+
+   ![ConfigIP_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_5.png) 
+
 * Selecciona "Usar la siguiente dirección IP".
    Ingresa la dirección IP deseada en el campo "Dirección IP". Por
 ejemplo, "192.168.1.2".
@@ -52,6 +74,9 @@ para que nuestra máquina virtual reconozca en la red que está y de esta manera
 enlace". Puede ser la dirección IP del router en tu red.
 * Ingresa las direcciones de servidor DNS si es necesario.
 
+  ![ConfigIP_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_6.png) 
+   
+
 **Paso 4:** Apliquemos los Cambios.
 * Haz clic en "Aceptar" para cerrar las ventanas de propiedades.
 
@@ -59,6 +84,8 @@ enlace". Puede ser la dirección IP del router en tu red.
 * Para verificar la configuración, puedes abrir una ventana de símbolo del
 sistema y ejecutar el comando `ipconfig`. Asegúrate de que la dirección IP,
 la máscara de subred y la puerta de enlace se muestren correctamente.
+
+ ![ConfigIP_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_7.png) 
 
 
 
