@@ -99,6 +99,43 @@ páginas web, funciona para otro tipo de servidores como, por ejemplo, servidore
 almacenamiento de archivos. FTP nos permite eliminar, editar, subir archivos, de manera
 remota, desde una computadora cliente, al servidor HTTP.
 
+
+**Paso 1:** Acceder al Administrador del Servidor.
+* Presiona la tecla `Win` y selecciona "Administrador del Servidor".
+
+**Paso 2:** Agrega el Rol IIS.
+* En el Administrador del Servidor, selecciona "Agregar roles y
+características".
+* En el asistente para agregar roles, selecciona "Servicios de Rol" y elige
+"Servidor web (IIS)".
+* Marca la opción "Servidor FTP" dentro de "Servicios de rol adicionales
+para Servidor web (IIS)".
+* Haz clic en "Siguiente" y luego en "Instalar". Sigue los pasos para
+completar la instalación del rol IIS con el servicio FTP.
+
+**Paso 3:** Configura el Sitio FTP.
+* Una vez instalado IIS con el servicio FTP, abre el "Administrador de IIS".
+  selecciona el nodo del servidor. Para identificar el nodo del servidor, lo
+  podemos hacer desde la terminal, ejecutando el comando `hostname`.
+* Haz clic en "Agregar sitio FTP" en el panel derecho.
+* Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
+  contenido y la configuración del puerto (por ejemplo, el puerto 21 para
+  FTP).
+* Configura la autenticación y el control de acceso según tus necesidades.
+  Puedes elegir autenticación básica o anónima, y configurar usuarios y
+  permisos de acceso.
+* Haz clic en "Siguiente" y luego en "Finalizar".
+
+**Paso 5:** Verificar la Configuración.
+ * Descarga FileZilla desde el sitio oficial: https://filezilla-project.org/
+ * Instala FileZilla en tu máquina local.
+* Abre un cliente FTP (por ejemplo, FileZilla) en una máquina remota y
+  conecta al servidor FTP utilizando la dirección IP o nombre del servidor y
+  el puerto configurado.
+  
+
+<a name="item3"></a>
+### 3. Cliente FTP
 Para la utilización de FTP, desde un *cliente remoto*, existen distintas opciones de
 software que nos permitirán poder hacerlo. Entre alguno de ellos tenemos:
 
@@ -129,19 +166,45 @@ de usar y soporta FTP sobre TLS/SSL (FTPS) y SSH File Transfer Protocol (SFTP).
   inmerso dentro de él, por lo que no hay que hacer configuración adicional para
   activarlo.
 
-  **Paso 1:** Acceder al Administrador del Servidor.
-* Presiona `Win + X` y selecciona "Administrador del Servidor".
-* Selecciona "Red e Internet" y luego "Configuración de red".
+  A continuación, instalaremos un cliente FTP en la máquina virtual de cliente, para realizar 
+  pruebas de transferencia de archivos.
 
+**Paso 1:** Verificar la Configuración.
+* Descarga FileZilla desde el sitio oficial: https://filezilla-project.org/
+  Instala FileZilla en tu máquina local.
 
+**Paso 2:** Abre FileZilla
+* Abre FileZilla en tu máquina local.
 
+**Paso 3:** Configura la Conexión al Servidor FTP.
+* En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios"..
+* Haz clic en "Nuevo sitio" y asigna un nombre descriptivo al servidor FTP.
+* Ingresa la dirección IP o el nombre del servidor en el campo "Servidor".
+* Establece el protocolo a "FTP" y el tipo de inicio de sesión a "Normal".
+* Ingresa el nombre de usuario y la contraseña proporcionados durante la
+  configuración del servidor FTP.
+* Haz clic en "Conectar" para guardar la configuración.
 
+**Paso 4:** Transfiere Archivos desde el Cliente
+* En la ventana principal de FileZilla, verás dos paneles. El de la izquierda
+  muestra los archivos locales, y el de la derecha muestra los archivos
+  remotos en el servidor FTP.
+* Navega a la ubicación de los archivos locales que deseas transferir en el
+panel izquierdo.
+* Selecciona los archivos y/o carpetas que deseas transferir.
+* Arrastra y suelta los archivos en el panel derecho para iniciar la
+transferencia.
 
+**Paso 5:** Descarga Archivos hacia el Cliente
+* Para descargar archivos desde el servidor FTP a tu máquina local,
+  selecciona los archivos en el panel derecho.
+* Arrastra y suelta los archivos en el panel izquierdo para iniciar la
+  descarga.
 
-<a name="item3"></a>
-### 3. Cliente FTP
-Instalaremos un cliente FTP en la máquina virtual de cliente, para realizar pruebas de transferencia de archivos.
-
+**Paso 6:** Verifica la Transferencia
+ * En la parte inferior de la ventana de FileZilla, podrás ver el progreso de la
+   transferencia. Asegúrate de que los archivos se transfieran correctamente
+   sin errores.
 
 
 
