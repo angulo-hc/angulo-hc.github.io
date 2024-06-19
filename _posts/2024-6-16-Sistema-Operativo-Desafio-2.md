@@ -12,10 +12,9 @@ title: Sistema Operativo - Desafío n°2
 - [4. Resolución de desafío](#item4) 
 - [4. Demo](#item4)
 - [5. Enlace](#item5)
-- 
 
 <a name="item1"></a>
-### 1. Resumen del desafío
+## 1. Resumen del desafío
 Instalaremos los sistemas operativo Windows Server y windows 10, máquina cliente, en máquinas virtuales. Configuraremos la dirección IP del
 servidor y configuraremos en él el rol IIS para el protocolo HTTP. En el entorno Internet Information Server (IIS) ejecutaremos configuraciones
 básicas a un servidor HTTP y FTP, mediante interfaz gráfica.
@@ -24,10 +23,10 @@ básicas a un servidor HTTP y FTP, mediante interfaz gráfica.
 
 
 <a name="item2"></a>
-### 2. Configuración de Servicios
+## 2. Configuración de Servicios
 A continuación, configuraremos los servivios HTTP Y FTP en el servidor. Mdificaremos la página de bienvenida y activaremos el protocolo FTP.
 
-#### Configuración de la IP del servidor de una máquina virtual
+### Configuración de la IP del servidor de una máquina virtual
 Todo servidor debe tener una dirección fija, estática, que le garantice la conectividad a internet y/o para poder entregar servicios de manera 
 local a la red donde está alojado. Nos estamos refiriendo a la IP local, es decir, privada. La configuración de la dirección IP del servidor en
 una máquina virtual depende del sistema operativo que estemos utilizando. A continuación, veremos algunos pasos para configurar la dirección IP 
@@ -89,7 +88,7 @@ la máscara de subred y la puerta de enlace se muestren correctamente.
 
   ![ConfigIP_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_7.png) 
 
-#### Configuración de rol IIS, protocolos HTTP y FTP
+### Configuración de rol IIS, protocolos HTTP y FTP
 El rol en Windows Server permite que el servidor actúe como un servidor web (A vecees
 también llamados servidor HTTP). Cuando configuramos el protocolo HTTP en IIS,
 básicamente estamos diciendo *"Vamos a utilizar este camino especial (protocolo) para
@@ -173,6 +172,7 @@ completar la instalación del rol IIS con el servicio FTP.
   servidor o el nombre del servidor. Por ejemplo, `http://localhost` o
   `http://<dirección_ip_del_servidor>`.
 
+    <a name="index"></a>
    ![ConfigRol_IIS_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_13.png)
 
 La diferencia *sitio web* y *sitio FTP* es que el *sitio web* es una página de una aplicación que se 
@@ -194,7 +194,7 @@ web.
 
 
 <a name="item3"></a>
-### 3. Cliente FTP
+## 3. Cliente FTP
 Para la utilización de FTP, desde un *cliente remoto*, existen distintas opciones de
 software que nos permitirán poder hacerlo. Entre alguno de ellos tenemos:
 
@@ -232,28 +232,46 @@ de usar y soporta FTP sobre TLS/SSL (FTPS) y SSH File Transfer Protocol (SFTP).
 * Descarga FileZilla desde el sitio oficial: https://filezilla-project.org/
   Instala FileZilla en tu máquina local.
 
+  ![ClienteFTP_1.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_1.png)
+
 **Paso 2:** Abre FileZilla
 * Abre FileZilla en tu máquina local.
 
+  ![ClienteFTP_2.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_2.png)
+
 **Paso 3:** Configura la Conexión al Servidor FTP.
-* En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios"..
+* En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios".
+
+  ![ClienteFTP_3.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_3.png)
+    
 * Haz clic en "Nuevo sitio" y asigna un nombre descriptivo al servidor FTP.
+
+  ![ClienteFTP_4.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_4.png)
+
 * Ingresa la dirección IP o el nombre del servidor en el campo "Servidor".
 * Establece el protocolo a "FTP" y el tipo de inicio de sesión a "Normal".
 * Ingresa el nombre de usuario y la contraseña proporcionados durante la
   configuración del servidor FTP.
+
+  ![ClienteFTP_5.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_5.png)
+  
 * Haz clic en "Conectar" para guardar la configuración.
 
 **Paso 4:** Transfiere Archivos desde el Cliente
 * En la ventana principal de FileZilla, verás dos paneles. El de la izquierda
   muestra los archivos locales, y el de la derecha muestra los archivos
   remotos en el servidor FTP.
+
+  ![ClienteFTP_6.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_6.png)
+  
 * Navega a la ubicación de los archivos locales que deseas transferir en el
 panel izquierdo.
 * Selecciona los archivos y/o carpetas que deseas transferir.
 * Arrastra y suelta los archivos en el panel derecho para iniciar la
 transferencia.
 
+  ![ClienteFTP_7.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_7.png)
+  
 **Paso 5:** Descarga Archivos hacia el Cliente
 * Para descargar archivos desde el servidor FTP a tu máquina local,
   selecciona los archivos en el panel derecho.
@@ -264,19 +282,22 @@ transferencia.
  * En la parte inferior de la ventana de FileZilla, podrás ver el progreso de la
    transferencia. Asegúrate de que los archivos se transfieran correctamente
    sin errores.
+ * En el directorio del servidor en donde se agregaron los archivos desde el cliente FTP,
+   debería registrarse los cambios
 
+   ![ClienteFTP_8.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_8.png)
+   
+ * Para la iustración de este ejemplo, se modificó el [index.html](#index) de bienvenida que venía por
+   defecto e iustramos.
 
-
+   ![ClienteFTP_10.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_10.png)
+   
 <a name="item4"></a>
-### 4. Resolución de desafío
-Modificaremos la página de web de bienvenida que se ilustra en ----. Esto lo haremos
-vía un cliente FTP que instalamos en el la sección 3.
-
-### 4. Demo
+## 4. Demo
 A continuación, encontrará un video ilustrativo de cómo se ejecuta la aplicación cuando se decide jugar una partida.
 
 <a name="item5"></a>
-### 5. Enlaces
+## 5. Enlaces
 * [Windows Server](https://www.microsoft.com/es-es/evalcenter/download-windows-server-2019)
 * [Windows 10](https://www.microsoft.com/es-es/software-download/windows10)
 * [FileZilla](https://filezilla-project.org/)
