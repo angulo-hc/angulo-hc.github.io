@@ -4,7 +4,6 @@ title: Sistema Operativo - Desafío n°2
 ---
 
 <a name="top"></a>
-
 ## Índice
 
 - [1. Resumen del desafío](#item1)
