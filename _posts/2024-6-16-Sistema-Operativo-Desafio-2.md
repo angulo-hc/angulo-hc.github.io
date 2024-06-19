@@ -166,14 +166,14 @@ completar la instalación del rol IIS con el servicio FTP.
 * Haz clic en "Siguiente" y luego en "Finalizar".
 
    ![ConfigRol_IIS_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_12.png)
-
+  
+<a name="index"></a>
 **Paso 5:** Verifica la Configuración de sitio web
 * Abre un navegador web y accede al sitio utilizando la dirección IP del
   servidor o el nombre del servidor. Por ejemplo, `http://localhost` o
   `http://<dirección_ip_del_servidor>`.
 
-    <a name="index"></a>
-   ![ConfigRol_IIS_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_13.png)
+    ![ConfigRol_IIS_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_13.png)
 
 La diferencia *sitio web* y *sitio FTP* es que el *sitio web* es una página de una aplicación que se 
 alojará dentro del servidor mientras que el *sitio FTP* es la ubicación física, dentro del servidor,
