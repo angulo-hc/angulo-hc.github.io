@@ -290,7 +290,7 @@ transferencia.
  * Para la iustración de este ejemplo, se modificó el [index.html](#index) de bienvenida que venía por
    defecto e iustramos.
 
-   ![ClienteFTP_10.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_10.png)
+   ![ClienteFTP_9.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_9.png)
    
 <a name="item4"></a>
 ## 4. Demo
