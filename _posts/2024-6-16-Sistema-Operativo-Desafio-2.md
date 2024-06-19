@@ -176,6 +176,16 @@ completar la instalación del rol IIS con el servicio FTP.
 
    ![ConfigRol_IIS_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_13.png)
 
+La diferencia *sitio web* y *sitio FTP* es que el *sitio web* es una página de una aplicación que se 
+alojará dentro del servidor mientras que el *sitio FTP* es la ubicación física, dentro del servidor,
+donde se alojan los archivos o aplicaciones web.
+
+El directorio físico de estos archivos de las aplicaciones web se encuentra en la raiz `C:\inetpub\wwwroot`.
+Este directorio sólo existirá luego de instalar el rol IIS. Si tenemos múltples *sitios web* alojados en el
+servidor, por cada uno de estos tendremos una carpeta siteada en la raiz del directorio que acabamos de
+mencionar.
+
+
 
 <a name="item3"></a>
 ### 3. Cliente FTP
