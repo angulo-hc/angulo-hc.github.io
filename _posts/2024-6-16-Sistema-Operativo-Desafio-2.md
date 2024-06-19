@@ -131,11 +131,12 @@ completar la instalación del rol IIS con el servicio FTP.
 
 **Paso 3:** Configura el Sitio Web
 * Una vez instalado IIS con el servicio FTP, abre el "Administrador de IIS".
+
+  ![ConfigRol_IIS_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_7.png)
+  
 * En el Administrador de IIS, selecciona el nodo del servidor. Para identificar
   el nodo del servidor, lo podemos hacer desde la terminal, ejecutando el comando
    `hostname`.
-
-  ![ConfigRol_IIS_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_7.png)
 
 * Haz clic en "Agregar sitio" en el panel derecho.
 * Completa los detalles del sitio, incluyendo el nombre, la ruta física del
