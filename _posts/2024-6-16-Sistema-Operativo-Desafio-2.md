@@ -237,7 +237,7 @@ de usar y soporta FTP sobre TLS/SSL (FTPS) y SSH File Transfer Protocol (SFTP).
 **Paso 2:** Abre FileZilla
 * Abre FileZilla en tu máquina local.
 
-  ![ClienteFTP_2.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_2.png)
+  ![ClienteFTP_21.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_21.png)
 
 **Paso 3:** Configura la Conexión al Servidor FTP
 * En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios"
