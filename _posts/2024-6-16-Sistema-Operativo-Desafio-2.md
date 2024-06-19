@@ -239,17 +239,20 @@ de usar y soporta FTP sobre TLS/SSL (FTPS) y SSH File Transfer Protocol (SFTP).
 
   ![ClienteFTP_2.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_2.png)
 
-**Paso 3:** Configura la Conexión al Servidor FTP.
-* En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios".
+**Paso 3:** Configura la Conexión al Servidor FTP
+* En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios"
+  
   ![ClienteFTP_3.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_3.png)
     
 * Haz clic en "Nuevo sitio" y asigna un nombre descriptivo al servidor FTP.
- ![ClienteFTP_4.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_4.png)
+
+  ![ClienteFTP_4.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_4.png)
 
 * Ingresa la dirección IP o el nombre del servidor en el campo "Servidor".
 * Establece el protocolo a "FTP" y el tipo de inicio de sesión a "Normal".
 * Ingresa el nombre de usuario y la contraseña proporcionados durante la
   configuración del servidor FTP.
+  
   ![ClienteFTP_5.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_5.png)
   
 * Haz clic en "Conectar" para guardar la configuración.
@@ -287,7 +290,7 @@ transferencia.
  * Para la iustración de este ejemplo, se modificó el [index.html](#index) de bienvenida que venía por
    defecto e iustramos.
 
-   ![ClienteFTP_9.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_9.png)
+![ClienteFTP_9.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_9.png)
    
 <a name="item4"></a>
 ## 4. Demo
