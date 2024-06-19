@@ -138,6 +138,8 @@ completar la instalación del rol IIS con el servicio FTP.
   el nodo del servidor, lo podemos hacer desde la terminal, ejecutando el comando
    `hostname`.
 
+   ![ConfigRol_IIS_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_8.png)
+
 * Haz clic en "Agregar sitio" en el panel derecho.
 * Completa los detalles del sitio, incluyendo el nombre, la ruta física del
   contenido del sitio y la configuración del puerto (por ejemplo, el puerto 80
@@ -147,21 +149,21 @@ completar la instalación del rol IIS con el servicio FTP.
 **Paso 4:** Configura el sitio FTP
 * Seleccione algún *sitio* creado a partir del paso anterior. Para ilustrar este
    paso, seleccionaremos el sitio web que existe por defecto.
-
-  ![ConfigRol_IIS_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_8.png)
-  
 * Haz clic derecho es el sitio web en "Agregar sitio FTP" en el panel derecho.
-* Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
+
+   ![ConfigRol_IIS_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_9.png)
+
+ * Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
   contenido y la configuración del puerto (por ejemplo, el puerto 21 para
   FTP).
 
-  ![ConfigRol_IIS_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_10.png)
+  ![ConfigRol_IIS_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_10.png)
   
 * Configura la autenticación y el control de acceso según tus necesidades.
   Puedes elegir autenticación básica o anónima, y configurar usuarios y
   permisos de acceso.
 
-   ![ConfigIP_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_11.png)
+   ![ConfigRol_IIS_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_11.png)
   
 * Haz clic en "Siguiente" y luego en "Finalizar".
 
