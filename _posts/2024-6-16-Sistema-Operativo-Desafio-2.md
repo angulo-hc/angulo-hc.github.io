@@ -171,13 +171,11 @@ completar la instalación del rol IIS con el servicio FTP.
 
 **Paso 5:** Verifica la Configuración de sitio web
 * Abre un navegador web y accede al sitio utilizando la dirección IP del
-  servidor o el nombre del servidor. Por ejemplo, http://localhost o
-  http://<dirección_ip_del_servidor>.
+  servidor o el nombre del servidor. Por ejemplo, `http://localhost` o
+  `http://<dirección_ip_del_servidor>`.
 
    ![ConfigRol_IIS_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_13.png)
 
-
-  
 
 <a name="item3"></a>
 ### 3. Cliente FTP
