@@ -181,9 +181,16 @@ alojará dentro del servidor mientras que el *sitio FTP* es la ubicación físic
 donde se alojan los archivos o aplicaciones web.
 
 El directorio físico de estos archivos de las aplicaciones web se encuentra en la raiz `C:\inetpub\wwwroot`.
-Este directorio sólo existirá luego de instalar el rol IIS. Si tenemos múltples *sitios web* alojados en el
-servidor, por cada uno de estos tendremos una carpeta siteada en la raiz del directorio que acabamos de
-mencionar.
+Este directorio sólo existirá luego de instalar el rol IIS. Si tenemos múltples *sitios web* alojados
+en el servidor, por cada uno de estos tendremos una carpeta siteada en la raiz del directorio que
+acabamos de mencionar.
+
+Cuando administramos más de un sitio web dentro de una plataforma IIS, no tiene sentido darle adminitración
+FTP a cada sitio individualmente si FTP usará el mismo puerto 21 porque sólo se podrá ingresar, por
+defecto desde una máquina cliente, al primer sitio que se hizo la configuración. Para administrar FTP
+en estos casos, lo que debemos hacer es agregar en *sitios* (Ver imagen del Paso 4) un sitio FTP el
+cual tenga acceso a una carpeta que contenga a todas las carpetas que alojarán los distisntos sitios
+web.
 
 
 
