@@ -48,7 +48,7 @@ adaptador".
 
 **Paso 3:** Configuremos la Dirección IP.
 
-![ConfigIP_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_2.png)
+   ![ConfigIP_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_2.png)
 
 * Antes de introducir las configuraciones que indicaremos en las líneas que siguen,
   si no conocemos la información solicitada, hacemos clic en "Detalles" en la imagen de
@@ -88,7 +88,7 @@ enlace". Puede ser la dirección IP del router en tu red.
 sistema y ejecutar el comando `ipconfig`. Asegúrate de que la dirección IP,
 la máscara de subred y la puerta de enlace se muestren correctamente.
 
- ![ConfigIP_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_7.png) 
+  ![ConfigIP_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_7.png) 
 
 #### Configuración de rol IIS, protocolos HTTP y FTP
 El rol en Windows Server permite que el servidor actúe como un servidor web (A vecees
@@ -110,12 +110,12 @@ remota, desde una computadora cliente, al servidor HTTP.
 * En el Administrador del Servidor, selecciona "Agregar roles y
 características".
 
-  ![ConfigRol_IIS_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_2.png)
+   ![ConfigRol_IIS_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_2.png)
 
 * En el asistente para agregar roles, selecciona "Servicios de Rol" y elige
 "Servidor web (IIS)".
 
-  ![ConfigRol_IIS_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_3.png)
+   ![ConfigRol_IIS_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_3.png)
 
 * Marca la opción "Servidor FTP" dentro de "Servicios de rol adicionales
 para Servidor web (IIS)".
@@ -132,13 +132,13 @@ completar la instalación del rol IIS con el servicio FTP.
 **Paso 3:** Configura el Sitio Web
 * Una vez instalado IIS con el servicio FTP, abre el "Administrador de IIS".
 
-  ![ConfigRol_IIS_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_7.png)
+   ![ConfigRol_IIS_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_7.png)
   
 * En el Administrador de IIS, selecciona el nodo del servidor. Para identificar
   el nodo del servidor, lo podemos hacer desde la terminal, ejecutando el comando
    `hostname`.
 
-   ![ConfigRol_IIS_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_8.png)
+    ![ConfigRol_IIS_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_8.png)
 
 * Haz clic en "Agregar sitio" en el panel derecho.
 * Completa los detalles del sitio, incluyendo el nombre, la ruta física del
@@ -157,7 +157,7 @@ completar la instalación del rol IIS con el servicio FTP.
   contenido y la configuración del puerto (por ejemplo, el puerto 21 para
   FTP).
 
-  ![ConfigRol_IIS_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_10.png)
+   ![ConfigRol_IIS_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_10.png)
   
 * Configura la autenticación y el control de acceso según tus necesidades.
   Puedes elegir autenticación básica o anónima, y configurar usuarios y
