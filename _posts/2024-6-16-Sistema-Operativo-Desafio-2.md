@@ -218,12 +218,6 @@ transferencia.
    sin errores.
 
 
- **Paso 5:** Verificar la Configuración .
- * Descarga FileZilla desde el sitio oficial: https://filezilla-project.org/
- * Instala FileZilla en tu máquina local.
-* Abre un cliente FTP (por ejemplo, FileZilla) en una máquina remota y
-  conecta al servidor FTP utilizando la dirección IP o nombre del servidor y
-  el puerto configurado.
 
 <a name="item4"></a>
 ### 4. Resolución de desafío
@@ -236,8 +230,8 @@ A continuación, encontrará un video ilustrativo de cómo se ejecuta la aplicac
 <a name="item5"></a>
 ### 5. Enlaces
 * [Windows Server](https://www.microsoft.com/es-es/evalcenter/download-windows-server-2019)
-* [Windows 10](https://www.microsoft.com/es-es/evalcenter/download-windows-server-2019](https://www.microsoft.com/es-es/software-download/windows10)
-* [FileZilla](https://www.microsoft.com/es-es/software-download/windows10](https://filezilla-project.org/)
+* [Windows 10](https://www.microsoft.com/es-es/software-download/windows10)
+* [FileZilla](https://filezilla-project.org/)
 
 
 [Volver a índice](#top)
