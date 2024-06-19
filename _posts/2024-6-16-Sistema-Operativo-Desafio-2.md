@@ -270,7 +270,7 @@ panel izquierdo.
 * Arrastra y suelta los archivos en el panel derecho para iniciar la
 transferencia.
 
-  ![ClienteFTP_7.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_7.png)
+ ![ClienteFTP_7.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_7.png)
   
 **Paso 5:** Descarga Archivos hacia el Cliente
 * Para descargar archivos desde el servidor FTP a tu máquina local,
@@ -285,7 +285,7 @@ transferencia.
  * En el directorio del servidor en donde se agregaron los archivos desde el cliente FTP,
    debería registrarse los cambios
 
-   ![ClienteFTP_8.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_8.png)
+  ![ClienteFTP_8.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_8.png)
    
  * Para la iustración de este ejemplo, se modificó el [index.html](#index) de bienvenida que venía por
    defecto e iustramos.
