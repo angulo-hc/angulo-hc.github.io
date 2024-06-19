@@ -104,30 +104,30 @@ remota, desde una computadora cliente, al servidor HTTP.
 **Paso 1:** Acceder al Administrador del Servidor.
 * Presiona la tecla `Windows` y selecciona "Administrador del Servidor".
 
-  ![ConfigIP_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_1.png)
+  ![ConfigRol_IIS_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_1.png)
 
 **Paso 2:** Agrega el Rol IIS.
 * En el Administrador del Servidor, selecciona "Agregar roles y
 características".
 
-  ![ConfigIP_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_2.png)
+  ![ConfigRol_IIS_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_2.png)
 
 * En el asistente para agregar roles, selecciona "Servicios de Rol" y elige
 "Servidor web (IIS)".
 
-  ![ConfigIP_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_3.png)
+  ![ConfigRol_IIS_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_3.png)
 
 * Marca la opción "Servidor FTP" dentro de "Servicios de rol adicionales
 para Servidor web (IIS)".
 
-  ![ConfigIP_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_4.png)
+  ![ConfigRol_IIS_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_4.png)
   
 * Haz clic en "Siguiente" y luego en "Instalar". Sigue los pasos para
 completar la instalación del rol IIS con el servicio FTP.
 
-  ![ConfigIP_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_5.png)
+  ![ConfigRol_IIS_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_5.png)
 
-  ![ConfigIP_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_6.png)
+  ![ConfigRol_IIS_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_6.png)
 
 **Paso 3:** Configura el Sitio Web
 * Una vez instalado IIS con el servicio FTP, abre el "Administrador de IIS".
@@ -135,7 +135,7 @@ completar la instalación del rol IIS con el servicio FTP.
   el nodo del servidor, lo podemos hacer desde la terminal, ejecutando el comando
    `hostname`.
 
-  ![ConfigIP_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_7.png)
+  ![ConfigRol_IIS_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_7.png)
 
 * Haz clic en "Agregar sitio" en el panel derecho.
 * Completa los detalles del sitio, incluyendo el nombre, la ruta física del
@@ -147,14 +147,14 @@ completar la instalación del rol IIS con el servicio FTP.
 * Seleccione algún *sitio* creado a partir del paso anterior. Para ilustrar este
    paso, seleccionaremos el sitio web que existe por defecto.
 
-  ![ConfigIP_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_9.png)
+  ![ConfigRol_IIS_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_8.png)
   
 * Haz clic derecho es el sitio web en "Agregar sitio FTP" en el panel derecho.
 * Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
   contenido y la configuración del puerto (por ejemplo, el puerto 21 para
   FTP).
 
-  ![ConfigIP_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_10.png)
+  ![ConfigRol_IIS_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_10.png)
   
 * Configura la autenticación y el control de acceso según tus necesidades.
   Puedes elegir autenticación básica o anónima, y configurar usuarios y
@@ -164,14 +164,14 @@ completar la instalación del rol IIS con el servicio FTP.
   
 * Haz clic en "Siguiente" y luego en "Finalizar".
 
-   ![ConfigIP_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_12.png)
+   ![ConfigRol_IIS_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_12.png)
 
 **Paso 5:** Verifica la Configuración de sitio web
 * Abre un navegador web y accede al sitio utilizando la dirección IP del
   servidor o el nombre del servidor. Por ejemplo, http://localhost o
   http://<dirección_ip_del_servidor>.
 
-   ![ConfigIP_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigIP_13.png)
+   ![ConfigRol_IIS_13]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_13.png)
 
 
   
