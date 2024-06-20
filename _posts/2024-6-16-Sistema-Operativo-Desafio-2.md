@@ -149,7 +149,7 @@ completar la instalación del rol IIS con el servicio FTP.
    paso, seleccionaremos el sitio web que existe por defecto.
 * Haz clic derecho es el sitio web en "Agregar sitio FTP" en el panel derecho.
 
-   ![ConfigRol_IIS_91]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_91.png)
+   ![ConfigRol_IIS_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_9.png)
 
 * Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
   contenido y la configuración del puerto (por ejemplo, el puerto 21 para
@@ -236,7 +236,6 @@ de usar y soporta FTP sobre TLS/SSL (FTPS) y SSH File Transfer Protocol (SFTP).
 
 **Paso 2:** Abre FileZilla
 * Abre FileZilla en tu máquina local.
-![ClienteFTP_21.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_21.png)
 
 **Paso 3:** Configura la Conexión al Servidor FTP
 * En FileZilla, ve al menú "Archivo" y selecciona "Gestor de sitios"
@@ -290,7 +289,7 @@ transferencia.
    
 <a name="item4"></a>
 ## 4. Demo
-A continuación, encontrará un video ilustrativo de cómo se ejecuta la aplicación cuando se decide jugar una partida.
+A continuación, ilustraremos los pasos anteriores en el caso de querer administrar más de una página web.
 
 <a name="item5"></a>
 ## 5. Enlaces
