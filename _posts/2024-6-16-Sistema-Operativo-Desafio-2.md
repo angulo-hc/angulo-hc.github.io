@@ -284,7 +284,7 @@ transferencia.
  * En el directorio del servidor en donde se agregaron los archivos desde el cliente FTP,
    debería registrarse los cambios
 
-  ![ClienteFTP_8.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_8.png)
+   ![ClienteFTP_8.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_8.png)
    
  * Para la iustración de este ejemplo, se modificó el [index.html](#index) de bienvenida que venía por
    defecto e iustramos.
