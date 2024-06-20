@@ -149,9 +149,9 @@ completar la instalación del rol IIS con el servicio FTP.
    paso, seleccionaremos el sitio web que existe por defecto.
 * Haz clic derecho es el sitio web en "Agregar sitio FTP" en el panel derecho.
 
-   ![ConfigRol_IIS_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_9.png)
+   ![ConfigRol_IIS_91]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ConfigRol_IIS_91.png)
 
- * Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
+* Completa los detalles del sitio FTP, incluyendo el nombre, la ruta física del
   contenido y la configuración del puerto (por ejemplo, el puerto 21 para
   FTP).
 
@@ -289,7 +289,7 @@ transferencia.
  * Para la iustración de este ejemplo, se modificó el [index.html](#index) de bienvenida que venía por
    defecto e iustramos.
 
-![ClienteFTP_9.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_9.png)
+  ![ClienteFTP_91.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_91.png)
    
 <a name="item4"></a>
 ## 4. Demo
