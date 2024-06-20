@@ -9,7 +9,6 @@ title: Sistema Operativo - Desafío n°2
 - [1. Resumen del desafío](#item1)
 - [2. Configuración de Servicios](#item2)
 - [3. Cliente FTP](#item3)
-- [4. Resolución de desafío](#item4) 
 - [4. Demo](#item4)
 - [5. Enlace](#item5)
 
