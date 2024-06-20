@@ -266,13 +266,13 @@ panel izquierdo.
 * Arrastra y suelta los archivos en el panel derecho para iniciar la
 transferencia.
 
-  ![ClienteFTP_7.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_7.png)
-  
 **Paso 5:** Descarga Archivos hacia el Cliente
 * Para descargar archivos desde el servidor FTP a tu máquina local,
   selecciona los archivos en el panel derecho.
 * Arrastra y suelta los archivos en el panel izquierdo para iniciar la
   descarga.
+
+  ![ClienteFTP_7.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_7.png)
 
 **Paso 6:** Verifica la Transferencia
  * En la parte inferior de la ventana de FileZilla, podrás ver el progreso de la
