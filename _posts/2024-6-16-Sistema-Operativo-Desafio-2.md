@@ -260,9 +260,6 @@ de usar y soporta FTP sobre TLS/SSL (FTPS) y SSH File Transfer Protocol (SFTP).
 * En la ventana principal de FileZilla, verás dos paneles. El de la izquierda
   muestra los archivos locales, y el de la derecha muestra los archivos
   remotos en el servidor FTP.
-
-  ![ClienteFTP_6.png]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_2/ClienteFTP_6.png)
-  
 * Navega a la ubicación de los archivos locales que deseas transferir en el
 panel izquierdo.
 * Selecciona los archivos y/o carpetas que deseas transferir.
