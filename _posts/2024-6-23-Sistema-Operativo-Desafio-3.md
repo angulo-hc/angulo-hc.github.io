@@ -78,7 +78,7 @@ Implementación de políticas de roles comunes en Windows Server.
   * Configurar acceso exclusivo a los archivos de nómina mediante permisos de archivo.
   * Enlazar esta GPO al contenedor del grupo RRHH.
     
-**5. Configurar Permisos de Acceso a Recursos:
+**5. Configurar Permisos de Acceso a Recursos:**
 * Carpeta Nómina:
   * Solo el grupo RRHH tiene permisos de lectura y escritura.
 * Servidores de Desarrollo:
