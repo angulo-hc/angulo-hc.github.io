@@ -10,12 +10,9 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 ## Índice
 
 - [1. Consigna del desafío](#item1)
-- [2. Configuración de Servicios](#item2)
-- [3. Cliente FTP](#item3)
+- [2. Configuración](#item2)
+- [3. Solución del desafío](#item3)
 - [4. Demo](#item4)
-- [5. Enlace](#item5)
-
-
 
 
 ### Configuración de la IP del servidor de una máquina virtual
@@ -181,7 +178,14 @@ Implementación de políticas de roles comunes en Windows Server.
   
 ### Configuraciones en dispositivos Clientes
 
-### Organización jerárquica de AD
+<a name="item3"></a>
+## 3. Solución del desafío
 
+### Organización jerárquica de AD
+### Creación de cuentas de usuario, grupos, unidades organizativas
+### Concepto de Políticas de Grupo (GPO)
+
+<a name="item4"></a>
+## 4. Demo
 
     
