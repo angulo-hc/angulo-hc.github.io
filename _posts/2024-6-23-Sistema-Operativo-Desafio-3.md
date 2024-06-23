@@ -27,7 +27,7 @@ en una máquina virtual con Windows Server. Como
 <a name="item1"></a>
 ## 1. Consigna del desafío
 
-### Escenario Prueba - Roles en Windows Server
+### Escenario Prueba
 
 **Empresa:** TechSolutions Inc.
 
@@ -37,7 +37,7 @@ en una máquina virtual con Windows Server. Como
 Recursos Humanos (RRHH), y Ventas. La empresa necesita asegurar que los datos y recursos sensibles sean accesibles solo para aquellos que lo
 necesiten, así como aplicar configuraciones específicas en los equipos de los usuarios según sus roles y departamentos.
 
-**Requisitos:**
+### Requerimientos
 
 **1. Restringir acceso a ciertos recursos**
 * Solo los empleados del departamento de RRHH deben tener acceso a los archivos de nómina.
