@@ -15,12 +15,6 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 - [4. Demo](#item4)
 
 
-### Configuración de la IP del servidor de una máquina virtual
-Todo servidor debe tener una dirección fija, estática, que le garantice la conectividad a internet y/o para poder entregar servicios de manera 
-local a la red donde está alojado. Nos estamos refiriendo a la IP local, es decir, privada. La configuración de la dirección IP del servidor en
-una máquina virtual depende del sistema operativo que estemos utilizando. A continuación, veremos algunos pasos para configurar la dirección IP 
-en una máquina virtual con Windows Server. Como 
-
 <a name="item1"></a>
 ## 1. Consigna del desafío
 
@@ -88,6 +82,9 @@ Implementación de políticas de roles comunes en Windows Server.
 
 ### Configuraciones básicas del Servidor - Configuración de la IP
 
+Todo servidor debe tener una dirección fija, estática, que le garantice la conectividad a internet y/o para poder entregar servicios
+de manera local a la red donde está alojado. Nos estamos refiriendo a la IP local, es decir, privada.
+
 **Paso 1:** Accedamos a la Configuración de Red.
 * Haz clic en el menú "Inicio" y selecciona "Configuración" (icono de engranaje).
 * Selecciona "Red e Internet" y luego "Configuración de red".
@@ -106,6 +103,8 @@ Implementación de políticas de roles comunes en Windows Server.
   nuestra LAN.
 * Ingresa la puerta de enlace predeterminada en el campo "Puerta de enlace". Puede ser la dirección IP del router en tu red.
 * Ingresa las direcciones de servidor DNS si es necesario.
+
+        
 
 ### Configuraciones de Roles Primarios ' Rol Active Directory
 
