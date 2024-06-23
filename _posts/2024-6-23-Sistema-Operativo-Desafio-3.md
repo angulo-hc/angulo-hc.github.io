@@ -86,7 +86,7 @@ Implementación de políticas de roles comunes en Windows Server.
 * Base de Datos de Clientes:
   * Solo el grupo Ventas tiene permisos de lectura y escritura.
 
-<a name="item1"></a>
+<a name="item2"></a>
 ## 2. Configuraciones de servicios
 
 
