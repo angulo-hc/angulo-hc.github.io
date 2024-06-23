@@ -2,6 +2,9 @@
 layout: post
 title: Sistema Operativo - Desafío n°3
 ---
+Se plicarán objetos de *Active Directory¨* para resolver un problema planteado en un entorno de Windows Server. El objetivo es utilizar los objetos de AD de manera
+efectiva para implementar políticas de roles comunes y abordar un escenario específico. La
+actividad se centrará en la creación y gestión de usuarios, grupos y políticas de grupo (GPO).
 
 <a name="top"></a>
 ## Índice
