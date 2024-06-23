@@ -87,7 +87,101 @@ Implementación de políticas de roles comunes en Windows Server.
   * Solo el grupo Ventas tiene permisos de lectura y escritura.
 
 <a name="item2"></a>
-## 2. Configuraciones de servicios
+## 2. Configuraciones
+
+### Configuraciones básicas del Servidor - Configuración de la IP
+
+**Paso 1:** Accedamos a la Configuración de Red.
+* Haz clic en el menú "Inicio" y selecciona "Configuración" (icono de engranaje).
+* Selecciona "Red e Internet" y luego "Configuración de red".
+
+**Paso 2:** Accedamos a las Configuraciones de Ethernet.
+* En la página de "Configuración de red", haz clic en "Cambiar opciones del adaptador".
+* Selecciona la conexión de red activa (puede llamarse "Ethernet" o "Conexión de área local").
+
+**Paso 3:** Configuremos la Dirección IP.
+* Haz clic en "Detalles", donde obtendremos toda la información que se nos solicitará.
+* Haz clic en "Propiedades" Y selecciona "Protocolo de Internet versión 4 (TCP/IPv4)" y haz doble clic. 
+* Selecciona "Usar la siguiente dirección IP".
+* Ingresa la dirección IP deseada en el campo "Dirección IP". Por ejemplo, "192.168.1.2".
+* Ingresa la máscara de subred en el campo correspondiente. Por ejemplo, "255.255.255.0". Recordemos que siempre debe estar configurada la
+  mascara para que nuestra máquina virtual reconozca en la red que está y de esta manera logre comunicarse con los demás dispositivos de
+  nuestra LAN.
+* Ingresa la puerta de enlace predeterminada en el campo "Puerta de enlace". Puede ser la dirección IP del router en tu red.
+* Ingresa las direcciones de servidor DNS si es necesario.
+
+### Configuraciones de Roles Primarios ' Rol Active Directory
+
+**Paso 1:** Accede al Administrador del Servidor
+* Presiona Win + X y selecciona "Administrador del Servidor".
+
+   IMAGEN
+  
+**Paso 2:** Agrega el Rol de Servicios de Dominio de Active Directory
+* En el Administrador del Servidor, selecciona "Agregar roles y características".
+
+      Imagen
+  
+* En el asistente para agregar roles, selecciona "Servicios de Rol" y elige "Servicios de Dominio de Active Directory".
+
+      Imagen
+  
+* Haz clic en "Siguiente" y luego en "Instalar". Sigue los pasos para completar la instalación del rol.
+
+**Paso 3:** Configura AD DS
+* Después de instalar el rol, aparecerá una notificación. Haz clic en "Promocionar este servidor a controlador de dominio".
+
+     Imagen
+* Selecciona la opción "Agregar un nuevo bosque" y proporciona el nombre de dominio deseado (por ejemplo, midominio.local).
+
+     Imagen
+  
+* Establece una contraseña para la base de datos de AD DS y haz clic en "Siguiente".
+
+     Imagen
+
+* En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en "Siguiente".
+* En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz clic en "Siguiente".
+* Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
+
+### Configuraciones de Dominio de Active Directory
+
+**Paso 1:** Configura AD DS
+* Después de instalar el rol, aparecerá una notificación. Haz clic en "Promocionar este servidor a controlador de dominio".
+
+     Imagen
+* Selecciona la opción "Agregar un nuevo bosque" y proporciona el nombre de dominio deseado (por ejemplo, midominio.local).
+
+     Imagen
+  
+* Establece una contraseña para la base de datos de AD DS y haz clic en "Siguiente".
+
+     Imagen
+
+* En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en "Siguiente".
+* En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz clic en
+  "Siguiente".
+* Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
+
+**Paso 2:** Configura DNS
+* Si aún no tienes el rol de Servidor DNS instalado, el asistente te pedirá instalarlo. Acepta la instalación automática.
+* Configura DNS según tus preferencias y haz clic en "Siguiente".
+
+**Paso 3:** Configura la Contraseña de Modo de Restauración de Servicio (DSRM)
+* Configura la contraseña de modo de restauración de servicio (DSRM) y haz clic en "Siguiente".
+* Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
+
+**Paso 4:** Completa la Instalación
+* Después de la instalación, el servidor se reiniciará automáticamente.
+
+**Paso 5:** Verifica el Dominio
+* Después del reinicio, inicia sesión con las credenciales del nuevo dominio.
+
+     Imagen
+  
+### Configuraciones en dispositivos Clientes
+
+### Organización jerárquica de AD
 
 
     
