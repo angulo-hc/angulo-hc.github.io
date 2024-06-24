@@ -175,7 +175,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 ### Organización jerárquica de AD ##########################
 
 
-### Creación de cuentas de usuario, grupos, unidades organizativas
+### Creación de cuentas de unidades organizativas, usuario, grupos
 
 A continuación, de acuerto a la especificación de nuestro escenario, proseguiremos a crear tres unidades organizativas, 
 dentro de del domino *techsolutions*, en nuestro *AD*.
@@ -185,7 +185,7 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
     ![ConfiguracionUO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_1.png)
 
-**Paso 1:** Crear Unidades Organizativas (UO)
+**Paso 2:** Crear Unidades Organizativas (UO)
 * En el panel izquierdo, selecciona el nombre de tu dominio en la estructura del árbol.
 
     ![ConfiguracionUO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_2.png)
@@ -200,17 +200,16 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
   ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
 
- 
-**Paso 2:** Crear Usuarios y Grupos
-* Dentro de cada *UO*, crea usuarios y grupos según la estructura
-organizativa. Haz clic derecho en la UO, selecciona "Nuevo" y elige el tipo
-de objeto que deseas crear (Usuario o Grupo).
-○ Ingresa la información necesaria para cada usuario o grupo, como
+ **Paso 3:** Crear Usuarios y Grupos
+* Dentro de cada *UO*, crea usuarios y grupos según la estructura organizativa. Haz clic derecho en la UO, 
+  selecciona "Nuevo" y elige el tipo de objeto que deseas crear (Usuario o Grupo).
+
+    IMAGEN
+
+* Ingresa la información necesaria para cada usuario o grupo, como
 nombre, contraseña, etc.
   
-
-
-### Concepto de Políticas de Grupo (GPO)
+### Políticas de Grupo (GPO)
 
 <a name="item4"></a>
 ## 4. Demo
