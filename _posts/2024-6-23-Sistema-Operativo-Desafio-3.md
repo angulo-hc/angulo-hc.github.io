@@ -143,7 +143,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 * En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en 
   "Siguiente".
 
-   ![ConfiguracionAD_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_6.png)
+  ![ConfiguracionAD_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_6.png)
   
 * En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz 
   clic en "Siguiente".
