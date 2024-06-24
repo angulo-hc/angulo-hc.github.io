@@ -172,8 +172,44 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 <a name="item3"></a>
 ## 3. Solución del desafío
 
-### Organización jerárquica de AD
+### Organización jerárquica de AD ##########################
+
+
 ### Creación de cuentas de usuario, grupos, unidades organizativas
+
+A continuación, de acuerto a la especificación de nuestro escenario, proseguiremos a crear tres unidades organizativas, 
+dentro de del domino *techsolutions*, en nuestro *AD*.
+
+**Paso 1:** Accede al Administrador de Active Directory
+* "Administrador de Active Directory" en tu máquina virtual.
+
+   IMAGEN_1
+
+**Paso 1:** Crear Unidades Organizativas (UO)
+* En el panel izquierdo, selecciona el nombre de tu dominio en la estructura del árbol.
+
+  IMAGEN_2
+
+* Haz clic derecho y elige "Nueva" -> "Unidad Organizativa".
+
+  IMAGEN_3
+  
+* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* de desafío, asigna una *UO*.
+
+   IMAGEN_4
+
+   IMAGEN_5
+
+ 
+**Paso 2:** Crear Usuarios y Grupos
+* Dentro de cada *UO*, crea usuarios y grupos según la estructura
+organizativa. Haz clic derecho en la UO, selecciona "Nuevo" y elige el tipo
+de objeto que deseas crear (Usuario o Grupo).
+○ Ingresa la información necesaria para cada usuario o grupo, como
+nombre, contraseña, etc.
+  
+
+
 ### Concepto de Políticas de Grupo (GPO)
 
 <a name="item4"></a>
