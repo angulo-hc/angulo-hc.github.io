@@ -104,6 +104,9 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 * Ingresa la puerta de enlace predeterminada en el campo "Puerta de enlace". Puede ser la dirección IP del router en tu red.
 * Ingresa las direcciones de servidor DNS si es necesario.
 
+
+  ![Configuracion_IP]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/Configuracion_IP.png) 
+
         
 
 ### Configuraciones de Roles Primarios ' Rol Active Directory
