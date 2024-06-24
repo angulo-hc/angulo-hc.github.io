@@ -114,52 +114,39 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 **Paso 1:** Accede al Administrador del Servidor
 * Presiona Win + X y selecciona "Administrador del Servidor".
 
-   IMAGEN
-  
 **Paso 2:** Agrega el Rol de Servicios de Dominio de Active Directory
 * En el Administrador del Servidor, selecciona "Agregar roles y características".
 
-      Imagen
+  ![ConfiguracionAD_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_1.png) 
   
 * En el asistente para agregar roles, selecciona "Servicios de Rol" y elige "Servicios de Dominio de Active Directory".
 
-      Imagen
+  ![ConfiguracionAD_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_2.png) 
   
 * Haz clic en "Siguiente" y luego en "Instalar". Sigue los pasos para completar la instalación del rol.
-
-**Paso 3:** Configura AD DS
-* Después de instalar el rol, aparecerá una notificación. Haz clic en "Promocionar este servidor a controlador de dominio".
-
-     Imagen
-* Selecciona la opción "Agregar un nuevo bosque" y proporciona el nombre de dominio deseado (por ejemplo, midominio.local).
-
-     Imagen
-  
-* Establece una contraseña para la base de datos de AD DS y haz clic en "Siguiente".
-
-     Imagen
-
-* En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en "Siguiente".
-* En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz clic en "Siguiente".
-* Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
 
 ### Configuraciones de Dominio de Active Directory
 
 **Paso 1:** Configura AD DS
 * Después de instalar el rol, aparecerá una notificación. Haz clic en "Promocionar este servidor a controlador de dominio".
 
-     Imagen
+  ![ConfiguracionAD_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_3.png) 
+  
 * Selecciona la opción "Agregar un nuevo bosque" y proporciona el nombre de dominio deseado (por ejemplo, midominio.local).
 
-     Imagen
+  ![ConfiguracionAD_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_4.png)
   
 * Establece una contraseña para la base de datos de AD DS y haz clic en "Siguiente".
 
-     Imagen
+  ![ConfiguracionAD_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_5.png) 
 
-* En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en "Siguiente".
-* En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz clic en
+* En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en 
   "Siguiente".
+
+   ![ConfiguracionAD_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_6.png)
+  
+* En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz 
+  clic en "Siguiente".
 * Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
 
 **Paso 2:** Configura DNS
@@ -176,7 +163,9 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 **Paso 5:** Verifica el Dominio
 * Después del reinicio, inicia sesión con las credenciales del nuevo dominio.
 
-     Imagen
+ ![ConfiguracionAD_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_7.png)
+
+ ![ConfiguracionAD_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_8.png)
   
 ### Configuraciones en dispositivos Clientes
 
