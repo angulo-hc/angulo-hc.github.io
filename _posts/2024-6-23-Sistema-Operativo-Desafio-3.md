@@ -163,9 +163,9 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 **Paso 5:** Verifica el Dominio
 * Después del reinicio, inicia sesión con las credenciales del nuevo dominio.
 
- ![ConfiguracionAD_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_7.png)
+  ![ConfiguracionAD_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_7.png)
 
- ![ConfiguracionAD_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_8.png)
+  ![ConfiguracionAD_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_8.png)
   
 ### Configuraciones en dispositivos Clientes
 
