@@ -183,22 +183,22 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 **Paso 1:** Accede al Administrador de Active Directory
 * "Administrador de Active Directory" en tu máquina virtual.
 
-   IMAGEN_1
+    ![ConfiguracionUO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_1.png)
 
 **Paso 1:** Crear Unidades Organizativas (UO)
 * En el panel izquierdo, selecciona el nombre de tu dominio en la estructura del árbol.
 
-  IMAGEN_2
+    ![ConfiguracionUO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_2.png)
 
 * Haz clic derecho y elige "Nueva" -> "Unidad Organizativa".
 
-  IMAGEN_3
+    ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
   
 * Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* de desafío, asigna una *UO*.
 
-   IMAGEN_4
+  ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
 
-   IMAGEN_5
+  ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
 
  
 **Paso 2:** Crear Usuarios y Grupos
