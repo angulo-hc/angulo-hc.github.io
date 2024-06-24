@@ -220,6 +220,18 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
   ![CreacionGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_2.png)
 
+* Una vez creado los grupos, por cada Unidad Organizativa, agregar los usuarios a estos haciendo 
+  doble clic en estos objetos
+  
+  ![UsuariosEnGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_1.png)
+
+  ![UsuariosEnGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_2.png)
+
+  ![UsuariosEnGrupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_3.png)
+
+  ![UsuariosEnGrupos_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_4.png)
+
+  ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
 
 ### Políticas de Grupo (GPO)
 
