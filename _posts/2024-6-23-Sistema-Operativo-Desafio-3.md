@@ -201,15 +201,33 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
   ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
 
  **Paso 3:** Crear Usuarios y Grupos
-* Dentro de cada *UO*, crea usuarios y grupos según la estructura organizativa. Haz clic derecho en la UO, 
-  selecciona "Nuevo" y elige el tipo de objeto que deseas crear (Usuario o Grupo).
+* Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la UO, 
+  selecciona "Nuevo" y elige Usuario.
 
-    IMAGEN
+    ![ConfiguracionUO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_1.png) 
 
-* Ingresa la información necesaria para cada usuario o grupo, como
+* Ingresa la información necesaria para cada usuario, como nombre, contraseña, etc.
+
+    ![ConfiguracionUO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_2.png)
+
+    ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
+
+* Dentro de cada *UO*, crea *grupo* según la estructura organizativa.
+
+  ![ConfiguracionGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
+
+     
+  
+
+  Paso 3: Crear Usuarios y Grupos
+○ Dentro de cada UO, crea usuarios y grupos según la estructura
+organizativa. Haz clic derecho en la UO, selecciona "Nuevo" y elige el tipo
+de objeto que deseas crear (Usuario o Grupo).
+○ Ingresa la información necesaria para cada usuario o grupo, como
 nombre, contraseña, etc.
   
 ### Políticas de Grupo (GPO)
+
 
 <a name="item4"></a>
 ## 4. Demo
