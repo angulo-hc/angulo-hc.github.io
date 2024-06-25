@@ -169,10 +169,36 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
   
 ### Configuraciones en dispositivos Clientes
 
-**Paso 1:** Accede al Administrador de Active Directory
+**Paso 1:** Configuración de IP del Servidor DNS
 * "Administrador de Active Directory" en tu máquina virtual.
 
     ![ConfiguracionDNS_Cliente]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionDNS_Cliente.png)
+
+**Paso 2:** Configuración del Dominio
+* Desde el panel izquierdo, en "Este Equipo", hacer clic derecho y doble clic en "Propiedades"
+
+    ![ConfigDeDominioEnCliente_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_1.png)
+
+* En lo que sigue, siga los pasos como lo ilustran las imágenes
+
+    ![ConfigDeDominioEnCliente_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_2.png)
+
+    ![ConfigDeDominioEnCliente_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_3.png)
+
+    ![ConfigDeDominioEnCliente_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_4.png)
+
+    ![ConfigDeDominioEnCliente_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_5.png)
+
+* Una vez configurado el dominio, si el procedimiento ha sido exitoso, deberíamos visibilizar información como la
+  de las siguientes imágenes
+
+    ![ConfigDeDominioEnCliente_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_6.png)
+
+    ![ConfigDeDominioEnCliente_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_7.png)
+
+* Al restaurar el equipo cliente, en la interfaz de inicio de sesión deberá tener algo como:
+
+    ![ConfigDeDominioEnCliente_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_8.png)
 
 
 <a name="item3"></a>
