@@ -225,11 +225,11 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
   
 * Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* de desafío, asigna una *UO*.
 
-  ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
+    ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
 
-  ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
+    ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
 
- **Paso 3:** Crear Usuarios y Grupos
+**Paso 3:** Crear Usuarios y Grupos
 * Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la UO, 
   selecciona "Nuevo" y elige Usuario.
 
@@ -239,31 +239,114 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
     ![CreacionUsuario_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_2.png)
 
-    ![CreacionUsuario_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_3.png)
+  ![CreacionUsuario_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_3.png)
 
 * Dentro de cada *UO*, crea un *grupo* según la estructura organizativa.
 
-  ![CreacionGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_1.png)
+    ![CreacionGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_1.png)
 
 * Ingresa la información necesaria para cada grupo
 
-  ![CreacionGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_2.png)
+    ![CreacionGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_2.png)
 
 * Una vez creado los grupos, por cada Unidad Organizativa, agregar los usuarios a estos haciendo 
   doble clic en estos objetos
   
-  ![UsuariosEnGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_1.png)
+    ![UsuariosEnGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_1.png)
 
-  ![UsuariosEnGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_2.png)
+    ![UsuariosEnGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_2.png)
 
-  ![UsuariosEnGrupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_3.png)
+    ![UsuariosEnGrupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_3.png)
 
-  ![UsuariosEnGrupos_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_4.png)
+    ![UsuariosEnGrupos_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_4.png)
 
-  ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
+    ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
 
 ### Políticas de Grupo (GPO)
 
+A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a los requerimientos dados
+
+
+#### Interfaz de configuración
+
+**Paso 1:** Posicionarnos en la interfaz en donde editaremos las GPO requeridas
+* Desde nuestro Servidor, haciendo clic en Windows, escribimos "Gestión de Políticas de Grupo". 
+
+    IMAGEN
+
+* Haciendo doble clic en "Gestión de Políticas de Grupo" y clic en el dominio "techsolutions" que se nos
+   muestra en el panel izquierdo, estaremos posicionados en el área donde crearemos nuestras GPO
+
+    IMAGEN
+
+    Notemos en esta última imagen que tendremos desplegadas carpetas con el mismo nombre de cada Unidad
+    Organizativa que hemos creado en el Paso 3.
+
+#### GPO para Contraseñas y Bloqueo de Pantalla
+
+**GPO para Contraseñas**
+
+**Paso 1:** 
+* Las GPO para este requerimiento será aplicada para todos los usuarios de nuestra organización por lo que,
+  directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en "Crear una GPO
+  en este Dominio", se crea la politica con nombre "password"
+
+    IMAGEN 4
+
+* A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
+  luego clic en la opción Editar
+
+   IMAGEN 5
+
+* En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar politícas,
+  restricciones, etc.
+
+   IMAGEN 6
+
+   Veemos que tenemos configuraciones a nivel de computadora y a nivel de usuarios.
+
+**GPO para Bloqueo de Pantalla**
+
+**Paso 1:**  Configurar el Tiempo de Inactividad
+* En el Editor de Administración de Políticas de Grupo, navega hasta
+    
+    > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
+      
+* En el panel derecho, busca y haz doble clic en la política denominada "Esperar tiempo antes de activarse el protector
+     de pantalla".       
+
+  IMAGEN 10
+
+* Selecciona "Habilitada" y luego en el cuadro "Segundos" introduce el valor correspondiente a 10 minutos (600 segundos).
+    Haz clic en "Aplicar", luego "Aceptar".
+
+  IMAGEN 11
+
+**Paso 2** Habilitar el Protector de Pantalla
+* En la misma ruta del paso anterior, busca y haz doble clic en la política "Habilitar protector de pantalla".
+
+  IMAGEN 12
+
+* Selecciona "Habilitada" y haz clic en "Aplicar", luego "Aceptar".
+
+  IMAGEN 13
+  
+**Paso 3** Proteger con Contraseña el Protector de Pantalla  
+    
+* En la misma ruta del paso 1, busca y haz doble clic en la política "Protector de pantalla: proteger con contraseña".
+  Selecciona "Habilitada" haz clic en "Aplicar", luego "Aceptar".    
+
+#### GPO para el Departamento de Desarrollo
+
+**GPO para la instalación automática de desarrollo: Visual Studio Code**
+  
+
+
+:
+● Instalar automáticamente software de desarrollo como Visual Studio.
+
+    
+  
 
 <a name="item4"></a>
 ## 4. Demo
