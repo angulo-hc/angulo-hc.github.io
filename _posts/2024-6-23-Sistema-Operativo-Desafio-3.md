@@ -172,6 +172,9 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 **Paso 1:** Accede al Administrador de Active Directory
 * "Administrador de Active Directory" en tu máquina virtual.
 
+    ![ConfiguracionDNS_Cliente]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionDNS_Cliente.png)
+
+
 <a name="item3"></a>
 ## 3. Solución del desafío
 
