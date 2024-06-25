@@ -109,7 +109,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 
         
 
-### Configuraciones de Roles Primarios ' Rol Active Directory
+### Configuraciones de Roles Primarios - Rol Active Directory
 
 **Paso 1:** Accede al Administrador del Servidor
 * Presiona Win + X y selecciona "Administrador del Servidor".
@@ -169,11 +169,11 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
   
 ### Configuraciones en dispositivos Clientes
 
+**Paso 1:** Accede al Administrador de Active Directory
+* "Administrador de Active Directory" en tu máquina virtual.
+
 <a name="item3"></a>
 ## 3. Solución del desafío
-
-### Organización jerárquica de AD ##########################
-
 
 ### Creación de cuentas de unidades organizativas, usuario, grupos
 
