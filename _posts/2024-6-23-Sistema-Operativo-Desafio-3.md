@@ -339,7 +339,58 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
 ###  GPO para el Departamento de Desarrollo
 
-**GPO para la instalación automática de desarrollo: Visual Studio Code**
+#### GPO para la instalación automática de desarrollo: Visual Studio Code
+
+La diferencia principal entre utilizar un archivo .exe y un archivo .msi para la instalación y distribución de software
+radica en la capacidad de gestión y configuración que proporciona el formato MSI (Microsoft Installer). Las diferencias
+claves en estos son:
+
+##### Archivo .exe
+
+**1. Instalación Interactiva:**
+- Los archivos ejecutables .exe suelen ser instaladores que pueden requerir interacción del usuario para completar la instalación.
+- Pueden permitir opciones personalizadas durante la instalación, como la selección de componentes o configuraciones específicas.
+
+**2. Limitaciones en la Distribución Centralizada:**
+- Distribuir software mediante un archivo .exe puede requerir que cada usuario ejecute el instalador manualmente en sus computadoras.
+- Es más difícil gestionar y automatizar la distribución en una red de computadoras grandes sin utilizar scripts o herramientas adicionales.
+
+**3. No Soporta Políticas de Grupo Directamente:**
+- Los archivos .exe no están diseñados para ser asignados o instalados de manera centralizada a través de Políticas de Grupo en Active
+  Directory sin scripts adicionales o soluciones de terceros.
+
+##### Archivo .msi (Microsoft Installer)
+
+**1. Instalación Silenciosa y Administrativa:**
+- Los archivos MSI están diseñados para permitir instalaciones silenciosas y administrativas.
+- Pueden instalarse sin interacción del usuario, lo que es ideal para implementaciones en entornos corporativos donde la automatización
+   y el control centralizado son importantes.
+
+**2. Gestión Centralizada:**
+- Los archivos MSI pueden ser fácilmente desplegados y gestionados a través de herramientas de administración como Políticas de Grupo en
+  Active Directory.
+- Permiten configurar opciones avanzadas de instalación y desinstalación, manejo de actualizaciones y políticas de seguridad de forma más
+  controlada y eficiente.
+  
+**3. Registro de Instalación:**
+- Los archivos MSI proporcionan un registro detallado de la instalación que facilita el seguimiento de las instalaciones y resolución
+  de problemas.
+  
+#### Ventajas de Usar Archivos .msi en Entornos Corporativos
+- **Control y Consistencia:** Permite asegurar que todas las máquinas de una red tengan instalado el mismo software y versión de manera consistente.
+
+- **Reducción de Costos:** Reduce el tiempo y esfuerzo dedicado a la administración y soporte de software, al poder automatizar y gestionar las
+   instalaciones desde un único punto.
+
+- **Compatibilidad:** A menudo, los archivos MSI están optimizados para integrarse mejor con las herramientas y políticas de gestión de sistemas
+  en entornos corporativos.
+
+En resumen, mientras que un archivo **.exe** puede ser adecuado para instalaciones individuales y pequeños entornos, un archivo **.msi** ofrece
+un nivel más alto de control, gestión y automatización en entornos empresariales, lo que facilita la distribución y el mantenimiento del software
+en una red de computadoras.
+
+Dicho todo lo anterior y dado que los archivos de descarga para la intalacion de Visual Studio Code desde la página oficial son **.exe**,
+debemos realizar la conversión de estos a **.msi**.
 
 **Paso 1:** Obtener el archivo .msi de Visual Studio Code
   1. Ve al sitio oficial de Visual Studio Code y descarga el archivo .exe de la versión que deseas instalar.
