@@ -337,7 +337,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 * En la misma ruta del paso 1, busca y haz doble clic en la política "Protector de pantalla: proteger con contraseña".
   Selecciona "Habilitada" haz clic en "Aplicar", luego "Aceptar".    
 
-## GPO para el Departamento de Desarrollo
+###  GPO para el Departamento de Desarrollo
 
 **GPO para la instalación automática de desarrollo: Visual Studio Code**
 
@@ -367,6 +367,9 @@ puedes usar la Política de Grupo (Group Policy) junto con un archivo MSI de Vis
 * Crear una Nueva GPO, de la misma forma que hemos hecho en pasos de secciones anteriores. En este caso, nombraremos a
   esta GPO "Instalación de Visual Studio Code". Esta GPO será creada desde la carpeta "Desarrolladores".
 
+###  GPO para el Departamento de Ventas
+
+### GPO para el Departamento de RRHH
 
 
 <a name="item5"></a>
@@ -378,9 +381,4 @@ puedes usar la Política de Grupo (Group Policy) junto con un archivo MSI de Vis
 <a name="item7"></a>
 ## 7. Enlaces
 
-  
-
-<a name="item4"></a>
-## 4. Demo
-
-    
+     
