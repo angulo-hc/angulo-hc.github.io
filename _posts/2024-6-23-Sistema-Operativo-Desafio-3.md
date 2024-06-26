@@ -368,12 +368,15 @@ puedes usar la Política de Grupo (Group Policy) junto con un archivo MSI de Vis
   esta GPO "Instalación de Visual Studio Code". Esta GPO será creada desde la carpeta "Desarrolladores".
 
 
-## Grupos de Seguridad en Active Directory
-  
-## Configurar Políticas de Grupo (GPOs)
 
-## Configuración de permisos de Acceso a recursos
+<a name="item5"></a>
+## 5. Permisos de Acceso a Recursos
 
+<a name="item6"></a>
+## 6. Demo
+
+<a name="item7"></a>
+## 7. Enlaces
 
   
 
