@@ -10,13 +10,17 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 ## Índice
 
 - [1. Consigna del desafío](#item1)
-- [2. Configuración](#item2)
-- [3. Solución del desafío](#item3)
-- [4. Demo](#item4)
+- [2. Configuración de los escenarios](#item2)
+- [3.Unidades organizativas, usuario y grupos de seguridad en Active Directory](#item3)
+- [4. Políticas de Grupo (GPOs)](#item4)
+- [5. Permisos de Acceso a Recursos:](#item5)
+- [6. Solución del desafío](#item6)
+- [7. Demo](#item7)
+- [8. Demo](#item8)
 
 
 <a name="item1"></a>
-## 1. Consigna del desafío
+## 1. Consigna del desafío #############
 
 ### Escenario Prueba
 
@@ -78,7 +82,7 @@ Implementación de políticas de roles comunes en Windows Server.
   * Solo el grupo Ventas tiene permisos de lectura y escritura.
 
 <a name="item2"></a>
-## 2. Configuraciones
+## 2. Configuración de los escenarios #############
 
 ### Configuraciones básicas del Servidor - Configuración de la IP
 
@@ -104,10 +108,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 * Ingresa la puerta de enlace predeterminada en el campo "Puerta de enlace". Puede ser la dirección IP del router en tu red.
 * Ingresa las direcciones de servidor DNS si es necesario.
 
-
   ![Configuracion_IP]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/Configuracion_IP.png) 
-
-        
 
 ### Configuraciones de Roles Primarios - Rol Active Directory
 
@@ -202,12 +203,11 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 
 
 <a name="item3"></a>
-## 3. Solución del desafío
+## 3. Unidades organizativas, usuario y grupos de seguridad en Active Directory
 
-### Creación de cuentas de unidades organizativas, usuario, grupos
-
+### Creación de Unidades Organizativas
 A continuación, de acuerto a la especificación de nuestro escenario, proseguiremos a crear tres unidades organizativas, 
-dentro de del domino *techsolutions*, en nuestro *AD*.
+dentro de del domino *techsolutions*Ñ Ventas, Desarrolladores, RRHH.
 
 **Paso 1:** Accede al Administrador de Active Directory
 * "Administrador de Active Directory" en tu máquina virtual.
@@ -229,7 +229,9 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
     ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
 
-**Paso 3:** Crear Usuarios y Grupos
+### Creación de usuarios y grupos de seguridad
+
+**Paso 1:** Crear usuarios
 * Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la UO, 
   selecciona "Nuevo" y elige Usuario.
 
@@ -241,6 +243,7 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
   ![CreacionUsuario_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_3.png)
 
+**Paso 2:** Crear grupos
 * Dentro de cada *UO*, crea un *grupo* según la estructura organizativa.
 
     ![CreacionGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_1.png)
@@ -262,12 +265,14 @@ dentro de del domino *techsolutions*, en nuestro *AD*.
 
     ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
 
-### Políticas de Grupo (GPO)
+
+<a name="item4"></a>
+## 4. Políticas de Grupo (GPOs)
 
 A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a los requerimientos dados
 
 
-#### Interfaz de configuración
+### Interfaz de configuración
 
 **Paso 1:** Posicionarnos en la interfaz en donde editaremos las GPO requeridas
 * Desde nuestro Servidor, haciendo clic en Windows, escribimos "Gestión de Políticas de Grupo". 
@@ -282,11 +287,9 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
     Notemos en esta última imagen que tendremos desplegadas carpetas con el mismo nombre de cada Unidad
     Organizativa que hemos creado en el Paso 3.
 
-#### GPO para Contraseñas y Bloqueo de Pantalla
+### GPO para Contraseñas y Bloqueo de Pantalla
 
-**GPO para Contraseñas**
-
-**Paso 1:** 
+**Paso 1:** GPO para Contraseñas
 * Las GPO para este requerimiento será aplicada para todos los usuarios de nuestra organización por lo que,
   directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en "Crear una GPO
   en este Dominio", se crea la politica con nombre "password"
@@ -305,10 +308,9 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
    Veemos que tenemos configuraciones a nivel de computadora y a nivel de usuarios.
 
-**GPO para Bloqueo de Pantalla**
 
-**Paso 1:**  Configurar el Tiempo de Inactividad
-* En el Editor de Administración de Políticas de Grupo, navega hasta
+**Paso 2:** GPO para Bloqueo de Pantalla  
+* Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
     
     > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
       
@@ -336,9 +338,21 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 * En la misma ruta del paso 1, busca y haz doble clic en la política "Protector de pantalla: proteger con contraseña".
   Selecciona "Habilitada" haz clic en "Aplicar", luego "Aceptar".    
 
-#### GPO para el Departamento de Desarrollo
+## GPO para el Departamento de Desarrollo
 
 **GPO para la instalación automática de desarrollo: Visual Studio Code**
+
+**Paso 1:** Obtener el archivo .msi de Visual Studio Code
+  1. Ve al sitio oficial de Visual Studio Code y descarga el archivo .exe de la versión que deseas instalar.
+
+       [Visual Studio Code .exe Download](https://code.visualstudio.com/download)
+
+  2. Desde Microsoft Store   
+       
+
+
+Para automatizar la instalación de Visual Studio Code en las computadoras clientes desde un servidor Active Directory,
+puedes usar la Política de Grupo (Group Policy) junto con un archivo MSI de Visual Studio Code.
 
 **Paso 1:** Preparativos
 * Se descarga el instalador de Visual Studio desde el sitio oficial y guárdalo en una carpeta compartida accesible por todos
@@ -354,7 +368,14 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 * Crear una Nueva GPO, de la misma forma que hemos hecho en pasos de secciones anteriores. En este caso, nombraremos a
   esta GPO "Instalación de Visual Studio Code". Esta GPO será creada desde la carpeta "Desarrolladores".
 
-    
+
+## Grupos de Seguridad en Active Directory
+  
+## Configurar Políticas de Grupo (GPOs)
+
+## Configuración de permisos de Acceso a recursos
+
+
   
 
 <a name="item4"></a>
