@@ -322,7 +322,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   IMAGEN 11
 
-**Paso 2** Habilitar el Protector de Pantalla
+**Paso 2:** Habilitar el Protector de Pantalla
 * En la misma ruta del paso anterior, busca y haz doble clic en la política "Habilitar protector de pantalla".
 
   IMAGEN 12
@@ -339,11 +339,20 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 #### GPO para el Departamento de Desarrollo
 
 **GPO para la instalación automática de desarrollo: Visual Studio Code**
+
+**Paso 1:** Preparativos
+* Se descarga el instalador de Visual Studio desde el sitio oficial y guárdalo en una carpeta compartida accesible por todos
+  los equipos en la red. Este instalador debe ser el archivo .msi o .exe.
+
+* Se crea una carpeta compartida en el servidor donde almacenarás los archivos de instalación. Asegúrate de que todos los equipos
+   que recibirán la instalación tengan permisos de lectura en esta carpeta.  
   
+**Paso 2:** Configuración de la GPO
 
-
-:
-● Instalar automáticamente software de desarrollo como Visual Studio.
+* Abrir la Consola de Administración de Políticas de Grupo (GPMC). Una opción es hacerlo escribiendo "gpmc.msc" en el
+ cuadro de búsqueda o en el menú de inicio y presionar Enter.
+* Crear una Nueva GPO, de la misma forma que hemos hecho en pasos de secciones anteriores. En este caso, nombraremos a
+  esta GPO "Instalación de Visual Studio Code". Esta GPO será creada desde la carpeta "Desarrolladores".
 
     
   
