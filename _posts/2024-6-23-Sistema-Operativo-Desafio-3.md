@@ -345,7 +345,7 @@ La diferencia principal entre utilizar un archivo .exe y un archivo .msi para la
 radica en la capacidad de gestión y configuración que proporciona el formato MSI (Microsoft Installer). Las diferencias
 claves en estos son:
 
-##### Archivo .exe
+**Archivo .exe**
 
 **1. Instalación Interactiva:**
 - Los archivos ejecutables .exe suelen ser instaladores que pueden requerir interacción del usuario para completar la instalación.
@@ -359,12 +359,12 @@ claves en estos son:
 - Los archivos .exe no están diseñados para ser asignados o instalados de manera centralizada a través de Políticas de Grupo en Active
   Directory sin scripts adicionales o soluciones de terceros.
 
-##### Archivo .msi (Microsoft Installer)
+**Archivo .msi (Microsoft Installer)**
 
 **1. Instalación Silenciosa y Administrativa:**
 - Los archivos MSI están diseñados para permitir instalaciones silenciosas y administrativas.
 - Pueden instalarse sin interacción del usuario, lo que es ideal para implementaciones en entornos corporativos donde la automatización
-   y el control centralizado son importantes.
+  y el control centralizado son importantes.
 
 **2. Gestión Centralizada:**
 - Los archivos MSI pueden ser fácilmente desplegados y gestionados a través de herramientas de administración como Políticas de Grupo en
@@ -376,7 +376,7 @@ claves en estos son:
 - Los archivos MSI proporcionan un registro detallado de la instalación que facilita el seguimiento de las instalaciones y resolución
   de problemas.
   
-#### Ventajas de Usar Archivos .msi en Entornos Corporativos
+**Ventajas de Usar Archivos .msi en Entornos Corporativos**
 - **Control y Consistencia:** Permite asegurar que todas las máquinas de una red tengan instalado el mismo software y versión de manera consistente.
 
 - **Reducción de Costos:** Reduce el tiempo y esfuerzo dedicado a la administración y soporte de software, al poder automatizar y gestionar las
