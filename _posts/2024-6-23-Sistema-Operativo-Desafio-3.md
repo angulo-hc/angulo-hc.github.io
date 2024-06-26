@@ -13,11 +13,10 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 - [2. Configuración de los escenarios](#item2)
 - [3.Unidades organizativas, usuario y grupos de seguridad en Active Directory](#item3)
 - [4. Políticas de Grupo (GPOs)](#item4)
-- [5. Permisos de Acceso a Recursos:](#item5)
-- [6. Solución del desafío](#item6)
-- [7. Demo](#item7)
-- [8. Demo](#item8)
-
+- [5. Permisos de Acceso a Recursos](#item5)
+- [6. Demo](#item6)
+- [7. Enlaces](#item7)
+  
 
 <a name="item1"></a>
 ## 1. Consigna del desafío #############
