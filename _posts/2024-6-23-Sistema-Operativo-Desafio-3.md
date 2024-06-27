@@ -434,9 +434,15 @@ debemos realizar la conversión de estos a **.msi**.
 
   > //WIN-URM3O76IRD8 > Desarrolladores > Servidores de Desarrollo >  vscodesetup-x64-1.90.2
   
-
   IMAGEN 8 news 2
+
+* Selecciona la opción ¨*Assigned* y haz clic en *OK*.
+
+* Reinicia o fuerza la actualización de políticas de grupo en los equipos cliente usando el comando ```gpupdate /force```.
   
+ 
+**Paso 4:** Aplicar la GPO a los equipos clientes  
+* Debemos asegurarnos que la GPO esté vinculada a la OU que contiene los equipos cliente donde deseas instalar Visual Studio Code.
 
 ###  GPO para el Departamento de Ventas
 
