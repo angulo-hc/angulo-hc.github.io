@@ -224,9 +224,9 @@ dentro de del domino *techsolutions*Ñ Ventas, Desarrolladores, RRHH.
 
     ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
 
-    
-    ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
     <a name="ref1"></a>
+    ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
+    
 
 ### Creación de usuarios y grupos de seguridad
 
@@ -294,7 +294,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
   ![GPO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_3.png)
 
   Notemos en esta última imagen que tendremos desplegadas carpetas con el mismo nombre de cada Unidad
-  Organizativa que hemos creado en la [Sección 3 Paso 3](#ref1).
+  Organizativa que hemos creado en la [Sección 3 - Paso 3](#ref1).
 
 ### GPO para Contraseñas y Bloqueo de Pantalla
 
