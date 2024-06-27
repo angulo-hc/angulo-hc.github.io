@@ -300,8 +300,8 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
 **Paso 1:** GPO para Contraseñas
 * Las GPO para este requerimiento será aplicada para todos los usuarios de nuestra organización por lo que,
-  directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en "Crear una GPO
-  en este Dominio", se crea la politica con nombre *"password"*
+  directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en *"Crear una GPO
+  en este Dominio"*, se crea la política con nombre *"password"*.
 
   ![GPO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_4.png)
 
