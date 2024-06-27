@@ -311,7 +311,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 **Paso 2:** GPO para Bloqueo de Pantalla  
 * Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
     
-    > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
+  > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
       
 * En el panel derecho, busca y haz doble clic en la política denominada "Esperar tiempo antes de activarse el protector
      de pantalla".       
@@ -393,30 +393,44 @@ Dicho todo lo anterior y dado que los archivos de descarga para la intalacion de
 debemos realizar la conversión de estos a **.msi**.
 
 **Paso 1:** Obtener el archivo .msi de Visual Studio Code
-  1. Ve al sitio oficial de Visual Studio Code y descarga el archivo .exe de la versión que deseas instalar.
+* Ve al sitio oficial de Visual Studio Code y descarga el archivo .exe de la versión que deseas instalar.
 
        [Visual Studio Code .exe Download](https://code.visualstudio.com/download)
 
-  2. Desde Microsoft Store   
+* Descarga una herramienta como [Exe to msi converter free](https://apps.microsoft.com/detail/xp9cwggd5rxjwm?amp%3Bgl=US&hl=en-us&gl=CL). Esta
+  te ayudará  a convertir un archivo **.exe** a **.msi**.   
        
-
-
-Para automatizar la instalación de Visual Studio Code en las computadoras clientes desde un servidor Active Directory,
-puedes usar la Política de Grupo (Group Policy) junto con un archivo MSI de Visual Studio Code.
-
-**Paso 1:** Preparativos
-* Se descarga el instalador de Visual Studio desde el sitio oficial y guárdalo en una carpeta compartida accesible por todos
-  los equipos en la red. Este instalador debe ser el archivo .msi o .exe.
-
-* Se crea una carpeta compartida en el servidor donde almacenarás los archivos de instalación. Asegúrate de que todos los equipos
-   que recibirán la instalación tengan permisos de lectura en esta carpeta.  
+               IMAGEN
   
-**Paso 2:** Configuración de la GPO
+**Paso 2:** Preparar un recurso compartido
+* En el servidor, creamos una carpeta compartida, de acceso exclusivo al grupo de Desarrolladores que fueron creados en la Sección 3, que hemos
+  llamado *Servidores de deasrrollo*. En esta almacenaremos el archivo MSI generado en el paso anterior.
 
-* Abrir la Consola de Administración de Políticas de Grupo (GPMC). Una opción es hacerlo escribiendo "gpmc.msc" en el
- cuadro de búsqueda o en el menú de inicio y presionar Enter.
-* Crear una Nueva GPO, de la misma forma que hemos hecho en pasos de secciones anteriores. En este caso, nombraremos a
-  esta GPO "Instalación de Visual Studio Code". Esta GPO será creada desde la carpeta "Desarrolladores".
+  > C > Desarrolladores > Servidores de Desarrollo
+
+  La carpeta debe tener permisos de lectura para el grupo de Desarrolladores.
+
+**Paso 3** Configurar una GPO para distribuir el archivo MSI
+* Abre la Consola de Administración de Políticas de Grupo (GPMC). Esto lo puedes hacer como se indico a inicio de esta sección o desde
+
+  > Server Manager > Tools > Group Policy Management
+
+  IMAGEN
+
+* Creamos una nueva Política de Grupo (GPO). Haciendo clic derecho en la unidad organizativa (OU) "Desarrolladores", se selecciona
+  *Create a GPO in this domain, and Link it here....*.
+* Damos un nombre a la GPO: *"Instalación de Visual Studio Code"*.
+* Editamos la GPO haciendo clic derecho sobre ella y seleccionando *Edit*.
+* Navegamos a
+
+  > Computer Configuration > Policies > Software Settings > Software Installation
+
+* Haciendo clic derecho en *Software Installation* y selecciona
+
+  > New > Package
+
+  
+  
 
 ###  GPO para el Departamento de Ventas
 
