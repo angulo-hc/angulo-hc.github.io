@@ -395,7 +395,7 @@ debemos realizar la conversión de estos a **.msi**.
 **Paso 1:** Obtener el archivo .msi de Visual Studio Code
 * Ve al sitio oficial de Visual Studio Code y descarga el archivo .exe de la versión que deseas instalar.
 
-       [Visual Studio Code .exe Download](https://code.visualstudio.com/download)
+  [Visual Studio Code .exe Download](https://code.visualstudio.com/download)
 
 * Descarga una herramienta como [Exe to msi converter free](https://apps.microsoft.com/detail/xp9cwggd5rxjwm?amp%3Bgl=US&hl=en-us&gl=CL). Esta
   te ayudará  a convertir un archivo **.exe** a **.msi**.   
@@ -429,7 +429,7 @@ debemos realizar la conversión de estos a **.msi**.
 
   > New > Package
 
-  
+  IMAGEN 8 news 2
   
 
 ###  GPO para el Departamento de Ventas
