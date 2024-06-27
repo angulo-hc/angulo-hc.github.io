@@ -429,6 +429,12 @@ debemos realizar la conversión de estos a **.msi**.
 
   > New > Package
 
+* En el cuadro de diálogo, se escribe la ruta UNC del archivo MSI en la carpeta compartida. La ruta debe tener el formato
+  *\\NombreServidor\NombreRecursoCompartido\VSCodeSetup-x64-<version>.msi*.  En nuestro caso, esta es
+
+  > //WIN-URM3O76IRD8 > Desarrolladores > Servidores de Desarrollo >  vscodesetup-x64-1.90.2
+  
+
   IMAGEN 8 news 2
   
 
