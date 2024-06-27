@@ -224,8 +224,9 @@ dentro de del domino *techsolutions*Ñ Ventas, Desarrolladores, RRHH.
 
     ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
 
-     <a name="ref1"></a>
+    
     ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
+    <a name="ref1"></a>
 
 ### Creación de usuarios y grupos de seguridad
 
@@ -307,7 +308,9 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 * A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
   luego clic en la opción Editar
 
-   IMAGEN 5
+  [GPO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_5.png)
+
+  [GPO_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_6.png)
 
 * En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar politícas,
   restricciones, etc.
