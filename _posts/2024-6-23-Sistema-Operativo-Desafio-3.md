@@ -163,8 +163,6 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 **Paso 5:** Verifica el Dominio
 * Después del reinicio, inicia sesión con las credenciales del nuevo dominio.
 
-  ![ConfiguracionAD_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_7.png)
-
   ![ConfiguracionAD_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_8.png)
   
 ### Configuraciones en dispositivos Clientes
@@ -304,7 +302,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
   directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en "Crear una GPO
   en este Dominio", se crea la politica con nombre "password"
 
-    IMAGEN 4
+  [GPO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_4.png)
 
 * A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
   luego clic en la opción Editar
