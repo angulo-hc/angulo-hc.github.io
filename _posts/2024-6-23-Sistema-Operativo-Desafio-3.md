@@ -291,7 +291,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 * Haciendo doble clic en "Gestión de Políticas de Grupo" y clic en el dominio "techsolutions" que se nos
    muestra en el panel izquierdo, estaremos posicionados en el área donde crearemos nuestras GPO
 
-  [GPO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_3.png)
+  ![GPO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_3.png)
 
   Notemos en esta última imagen que tendremos desplegadas carpetas con el mismo nombre de cada Unidad
   Organizativa que hemos creado en la [Sección 3 Paso 3](#ref1).
@@ -301,16 +301,16 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 **Paso 1:** GPO para Contraseñas
 * Las GPO para este requerimiento será aplicada para todos los usuarios de nuestra organización por lo que,
   directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en "Crear una GPO
-  en este Dominio", se crea la politica con nombre "password"
+  en este Dominio", se crea la politica con nombre *"password"*
 
-  [GPO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_4.png)
+  ![GPO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_4.png)
 
 * A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
   luego clic en la opción Editar
 
-  [GPO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_5.png)
+  ![GPO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_5.png)
 
-  [GPO_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_6.png)
+  ![GPO_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_6.png)
 
 * En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar politícas,
   restricciones, etc.
