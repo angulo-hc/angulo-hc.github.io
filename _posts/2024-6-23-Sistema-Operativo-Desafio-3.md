@@ -279,7 +279,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   ![GPO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_1.png)
 
-  Otra forma de acceder a la edición y/ creación de esta política es
+  Otra forma de acceder a la edición y/o creación de estas políticas es
   
   * Desde el *Serve Manager*
     
@@ -287,7 +287,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
     
     ![GPO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_2.png)
 
-  * Dese el ejecutador de Windows, *Windows R*, escribe *gpmc.msc* y presiona *Enter*
+  * Dese el ejecutador de Windows, ```Windows + R```, escribe ```gpmc.msc``` y presiona ```Enter```.
 
 * Haciendo doble clic en "Gestión de Políticas de Grupo" y clic en el dominio "techsolutions" que se nos
    muestra en el panel izquierdo, estaremos posicionados en el área donde crearemos nuestras GPO
@@ -295,7 +295,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
   [GPO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_3.png)
 
   Notemos en esta última imagen que tendremos desplegadas carpetas con el mismo nombre de cada Unidad
-  Organizativa que hemos creado en la Sección 3 Paso 3 [Sección 3 Paso 3](#ref1).
+  Organizativa que hemos creado en la [Sección 3 Paso 3](#ref1).
 
 ### GPO para Contraseñas y Bloqueo de Pantalla
 
