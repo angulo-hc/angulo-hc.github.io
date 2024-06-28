@@ -380,6 +380,11 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   ![GPO_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_12.png)
 
+Para resolver el requerimiento de la GPO para todos los usuarios auténticados, en este caso, se decidió resolver creando una única GPO, *password*, que agrupara las configuraciones de Contraseña y Bloqueo de Pantalla. Sin embargo, perfectamente
+se pudo crear otra política que sólo incluyera Bloqueo de Pantalla. 
+
+Por otro lado, tanto para Contraseña como para Bloqueo de Pantalla, específicamente por las cosignas dadas, se pudieron configurar sus políticas vía ```Computer Configuration``` como ```User Configuration```. En el ejemplo anterior tuvimos la
+oportunidad de trabajar con ambas.
 
 ###  GPO para el Departamento de Desarrollo
 
