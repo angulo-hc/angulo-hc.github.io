@@ -182,13 +182,13 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 
 * En lo que sigue, siga los pasos como lo ilustran las imágenes
 
-    ![ConfigDeDominioEnCliente_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_2.png)
+  ![ConfigDeDominioEnCliente_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_2.png)
 
-    ![ConfigDeDominioEnCliente_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_3.png)
+  ![ConfigDeDominioEnCliente_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_3.png)
 
-    ![ConfigDeDominioEnCliente_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_4.png)
+  ![ConfigDeDominioEnCliente_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_4.png)
 
-    ![ConfigDeDominioEnCliente_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_5.png)
+  ![ConfigDeDominioEnCliente_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_5.png)
 
 * Una vez configurado el dominio, si el procedimiento ha sido exitoso, deberíamos visibilizar información como la
   de las siguientes imágenes
@@ -199,7 +199,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 
 * Al restaurar el equipo cliente, en la interfaz de inicio de sesión deberá tener algo como:
 
- ![ConfigDeDominioEnCliente_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_8.png)
+  ![ConfigDeDominioEnCliente_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_8.png)
 
 
 <a name="item3"></a>
@@ -311,8 +311,8 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   * Dese el ejecutador de Windows, ```Windows + R```, escribe ```gpmc.msc``` y presiona ```Enter```.
 
-* Haciendo doble clic en "Gestión de Políticas de Grupo" y clic en el dominio "techsolutions" que se nos
-   muestra en el panel izquierdo, estaremos posicionados en el área donde crearemos nuestras GPO
+* Haciendo doble clic en ```Group Policy Management``` y clic en el dominio ```techsolutions```, que se nos
+  muestra en el panel izquierdo, estaremos posicionados en el área donde crearemos nuestras GPO
 
   ![GPO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_3.png)
 
@@ -322,20 +322,20 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 ### GPO para Contraseñas y Bloqueo de Pantalla
 
 **Paso 1:** GPO para Contraseñas
-* Las GPO para este requerimiento será aplicada para todos los usuarios de nuestra organización por lo que,
-  directamente desde nuestro dominio techsolutions.local, haciendo clic derecho, luego clic en *"Crear una GPO
-  en este Dominio"*, se crea la política con nombre *"password"*.
+* Las GPO para este requerimiento será aplicada para todos los usuarios de nuestra organización, por lo que
+  directamente desde nuestro dominio ``techsolutions.local``, haciendo clic derecho, luego clic en ```Create a GPO
+  in this domain, and Link it here...```, se crea la política con nombre *"password"*.
 
   ![GPO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_4.png)
 
-* A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
-  luego clic en la opción *Editar*
-
   ![GPO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_5.png)
+
+* A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
+  luego clic en la opción ```Edit```
 
   ![GPO_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_6.png)
 
-* En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar 
+* En esta última interfaz que se despliega, tendremos todos los parámetros que existen para poder agregar 
   políticas, restricciones, etc.
 
   ![GPO_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_7.png)
@@ -344,30 +344,34 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
 * En el editor de Administración de Políticas de Grupo que vemos desplegado en la última imagen, navega hasta 
 
-  > Configuración de Computadora > Políticas > Configuraciones de Windows > Configuraciones de Seguridad 
-  > Políticas de Cuenta > Políticas de Password
+  > Computer Configuration > Policies > Windows Settings > Security Settings 
+  > Account Policies >Password Policy
 
-* Seleccionamos *Reciclaje del Historial de Contraseñas*
+* Seleccionamos ```Enforce password history```
   
   ![GPO_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_8.png)
 
 * Para la configuración de la longitud de Contraseñas a 12 caracteres, desde el mismo panel derecho anterior,
-  seleccionamos *"Longitud Mínima de Password"*. La edición de esta configuración la mostramos en la imagen que
+  seleccionamos ```Minimum password length```. La edición de esta configuración la mostramos en la imagen que
   sigue
 
   ![GPO_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_9.png)
 
 * Para la configuración de políticas para generar una *"Contraseña fuerte"*, desde este panel derecho,
-  seleccionamos **Requerimientos para generar una contraseña segura"*. La configuración requerida queda
+  seleccionamos ```Password must meet complexity requirements```. La configuración requerida queda
   ilustrada como se observa en la imagen
 
   ![GPO_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_10.png)
 
+* Un resumen de las configuraciones que han sido editadas lo vemos a continuación  
 
- **Paso 2:** GPO para Bloqueo de Pantalla  
- * Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
+  ![GPO_Summary]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_Summary.png)
+
+**Paso 2:** GPO para Bloqueo de Pantalla  
+ * Para configurar el tiempo de inactividad, nuevamente desde el Editor de Administración de Políticas de Grupo, para
+   la misma GPO que hemos llamado *Password*, navegamos hasta
     
-   > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
+   > User Configuration > Plantillas administrativas > Panel de control > Personalización
       
  * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el
     protector de pantalla"*.       
