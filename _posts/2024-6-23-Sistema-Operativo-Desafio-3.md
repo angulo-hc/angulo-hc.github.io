@@ -26,7 +26,7 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 **Empresa:** TechSolutions Inc.
 
 **Sector:** Desarrollo de software y servicios tecnológicos.
-
+<a name="escenario"></a>
 **Escenario:** TechSolutions Inc. está creciendo rápidamente y ha contratado a nuevos empleados en varios departamentos, incluidos Desarrollo,
 Recursos Humanos (RRHH), y Ventas. La empresa necesita asegurar que los datos y recursos sensibles sean accesibles solo para aquellos que lo
 necesiten, así como aplicar configuraciones específicas en los equipos de los usuarios según sus roles y departamentos.
@@ -224,16 +224,17 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
  
 > New > Organizational Unit
 
- * Haz doble clic en esta última, ingresa el nombre de la Unidad Oragnizativa a crear, seguidamente
+* Haz doble clic en esta última, ingresa el nombre de la Unidad Oragnizativa a crear, seguidamente
    haz clic en ```Ok```
 
-![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
+   ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
 
-![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
+   ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
   
-* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* del desafío, asigna una *UO*.
+* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en [Escenarios del desafío](#escenario)
+  del desafío, se asigna una *UO*.
 
-![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
+  ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
     
 
 ### Creación de usuarios y grupos de seguridad
