@@ -293,7 +293,6 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
 A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a los requerimientos dados.
 
-
 ### Interfaz de configuración
 
 **Paso 1:** Posicionarnos en la interfaz en donde editaremos las GPO requeridas
@@ -368,18 +367,16 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
   ![GPO_Summary]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_Summary.png)
 
 **Paso 2:** GPO para Bloqueo de Pantalla  
- * Para configurar el tiempo de inactividad, nuevamente desde el Editor de Administración de Políticas de Grupo, para
-   la misma GPO que hemos llamado *Password*, navegamos hasta
+* Para configurar el tiempo de inactividad, nuevamente desde el Editor de Administración de Políticas de Grupo, 
+  para la misma GPO que hemos llamado *Password*, navegamos hasta
     
-   > User Configuration > Plantillas administrativas > Panel de control > Personalización
+   > User Configuration > Policies > Administrative Templates > Control Panel > Personalization
       
- * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el
-    protector de pantalla"*.       
+* En el panel derecho, haz doble clic en la política denominada ```Screem saver timeout```.       
 
-   ![GPO_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_11.png)
+  ![GPO_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_11.png)
 
-* Selecciona ¨*"Habilitada"* y luego en el cuadro *"Segundos"* introduce el valor correspondiente a 10 minutos (600 segundos).
-    Haz clic en *"Aplicar"*, luego "Aceptar"*.
+* Selecciona ```Enabled``` y luego en el cuadro ```Seconds``` introduce el valor correspondiente a 10 minutos (600 segundos). Haz clic en ```Apply```, luego ```Ok```.
 
   ![GPO_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_12.png)
 
