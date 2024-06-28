@@ -148,7 +148,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
   
 * En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz 
   clic en ```Siguiente```.
-* Revisa la configuración en la página de resumen y haz clic en ```Siguiente"``` para iniciar la instalación.
+* Revisa la configuración en la página de resumen y haz clic en ```Siguiente``` para iniciar la instalación.
 
 **Paso 2:** Configura DNS
 * Si aún no tienes el rol de Servidor DNS instalado, el asistente te pedirá instalarlo. Acepta la instalación automática.
@@ -257,47 +257,47 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
   ![CreacionUsuario_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_3.png)
 
 **Paso 2:** Crear grupos
-* Dentro de cada *UO*, crea un *grupo* según la estructura organizativa.
+* Dentro de cada *UO*, crea un *Grupo* según la estructura organizativa.
 
-    ![CreacionGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_1.png)
+  ![CreacionGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_1.png)
 
-* Ingresa la información necesaria para cada grupo
+* Ingresa la información necesaria para cada grupo.
 
-    ![CreacionGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_2.png)
+  ![CreacionGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionGrupos_2.png)
 
 * Una vez creado los grupos, por cada Unidad Organizativa, agregar los usuarios a estos haciendo 
   doble clic en estos objetos
   
-    ![UsuariosEnGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_1.png)
+  ![UsuariosEnGrupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_1.png)
 
-    ![UsuariosEnGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_2.png)
+  ![UsuariosEnGrupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_2.png)
 
-    ![UsuariosEnGrupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_3.png)
+  ![UsuariosEnGrupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_3.png)
 
-    ![UsuariosEnGrupos_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_4.png)
+  ![UsuariosEnGrupos_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_4.png)
 
-    ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
+  ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
 
 * La configuración de Grupos y usuarios para las Unidades Organizativas Desarrolladores, Ventas y RRHH
   lo mostramos a continuación
 
- ![UO_Usuarios_Grupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_1.png)
+  ![UO_Usuarios_Grupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_1.png)
 
- ![UO_Usuarios_Grupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_2.png)
+  ![UO_Usuarios_Grupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_2.png)
 
- ![UO_Usuarios_Grupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_3.png)
+  ![UO_Usuarios_Grupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_3.png)
 
 
 <a name="item4"></a>
 ## 4. Políticas de Grupo (GPOs)
 
-A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a los requerimientos dados
+A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a los requerimientos dados.
 
 
 ### Interfaz de configuración
 
 **Paso 1:** Posicionarnos en la interfaz en donde editaremos las GPO requeridas
-* Desde nuestro Servidor, haciendo clic en Windows, escribimos *"Gestión de Políticas de Grupo"*. 
+* Desde nuestro Servidor, haciendo clic en ```Windows```, escribimos ```Group Policy Managment``` 
 
   ![GPO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_1.png)
 
@@ -316,7 +316,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   ![GPO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_3.png)
 
-  Notemos en esta última imagen que tendremos desplegadas carpetas con el mismo nombre de cada Unidad
+  Notemos que, en esta última imagen, tendremos desplegadas carpetas con el mismo nombre de cada Unidad
   Organizativa que hemos creado en la [Sección 3 - Paso 3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png).
 
 ### GPO para Contraseñas y Bloqueo de Pantalla
