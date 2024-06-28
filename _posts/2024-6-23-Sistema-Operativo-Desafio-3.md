@@ -311,8 +311,8 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   ![GPO_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_6.png)
 
-* En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar políticas,
-  restricciones, etc.
+* En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar 
+  políticas, restricciones, etc.
 
   ![GPO_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_7.png)
 
@@ -345,8 +345,8 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
     
   > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
       
-  * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el protector
-     de pantalla"*.       
+  * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el
+    protector de pantalla"*.       
 
     ![GPO_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_11.png)
 
@@ -355,12 +355,6 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
     ![GPO_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_12.png)
 
-
-  
-**Paso 3** Proteger con Contraseña el Protector de Pantalla  
-    
-* En la misma ruta del paso 1, busca y haz doble clic en la política "Protector de pantalla: proteger con contraseña".
-  Selecciona "Habilitada" haz clic en "Aplicar", luego "Aceptar".    
 
 ###  GPO para el Departamento de Desarrollo
 
