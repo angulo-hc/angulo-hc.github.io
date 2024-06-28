@@ -452,12 +452,11 @@ Dicho todo lo anterior y dado que los archivos de descarga para la intalacion de
   ![VSC_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/VSC_3.png)
 
   ![VSC_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/VSC_4.png)
-  
-**Paso 2:** Preparar un recurso compartido
-* En el servidor, creamos una carpeta compartida, de acceso exclusivo al grupo de Desarrolladores que fueron creados en la Sección 3, que hemos
-  llamado *Servidores de deasrrollo*. En esta almacenaremos el archivo MSI generado en el paso anterior.
 
-  > C > Desarrolladores > Servidores de Desarrollo
+**Paso 2:** Preparar un recurso compartido
+* En el servidor, creamos una carpeta compartida, de acceso exclusivo al grupo de Desarrolladores que fueron creados en la [Sección 3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_1.png), que hemos llamado *VSCode*. En esta, almacenaremos el archivo MSI generado en el paso anterior.
+
+  > C > Desarrolladores > VSCode
 
   La carpeta debe tener permisos de lectura para el grupo de Desarrolladores.
 
