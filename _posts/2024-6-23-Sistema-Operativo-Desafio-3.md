@@ -26,6 +26,7 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 **Empresa:** TechSolutions Inc.
 
 **Sector:** Desarrollo de software y servicios tecnológicos.
+
 <a name="escenario"></a>
 **Escenario:** TechSolutions Inc. está creciendo rápidamente y ha contratado a nuevos empleados en varios departamentos, incluidos Desarrollo,
 Recursos Humanos (RRHH), y Ventas. La empresa necesita asegurar que los datos y recursos sensibles sean accesibles solo para aquellos que lo
