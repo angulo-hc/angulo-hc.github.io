@@ -220,16 +220,20 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
   ![ConfiguracionUO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_2.png)
 
-* Haz clic derecho y busca ```New Organizational Unit ``` . Hacer doble clic en esta última, ingresar
-  el nombre de la Unidad Oragnizativa a crear, seguidamente haz clic en ```Ok```
+* Haz clic derecho y busca
+ 
+> New > Organizational Unit
+
+ * Haz doble clic en esta última, ingresa el nombre de la Unidad Oragnizativa a crear, seguidamente
+   haz clic en ```Ok```
 
 ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
+
+![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
   
-* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* de desafío, asigna una *UO*.
+* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* del desafío, asigna una *UO*.
 
-    ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
-
-    ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
+![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
     
 
 ### Creación de usuarios y grupos de seguridad
