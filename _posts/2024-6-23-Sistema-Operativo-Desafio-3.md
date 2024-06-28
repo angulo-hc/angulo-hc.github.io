@@ -232,23 +232,27 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
   ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
   
-* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en [Escenarios del desafío](#escenario)
-  del desafío, se asigna una *UO*.
+* Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en [Escenarios del desafío](#escenario),
+  se asigna una *UO*.
 
   ![ConfiguracionUO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_5.png)
     
 
-### Creación de usuarios y grupos de seguridad
+### Usuarios y Grupos de Seguridad
 
 **Paso 1:** Crear usuarios
-* Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la *UO*, 
-  selecciona "Nuevo" y elige Usuario.
+* Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la *UO*,
+  busca
 
-    ![CreacionUsuario_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_1.png) 
+  > New > User
 
-* Ingresa la información necesaria para cada usuario, como nombre, contraseña, etc.
+  Haciendo doble clic en este último, se ingresan los datos correspondientes
 
-    ![CreacionUsuario_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_2.png)
+  ![CreacionUsuario_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_1.png) 
+
+* Ingresa la información necesaria para cada usuario, como nombre, password, etc.
+
+  ![CreacionUsuario_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_2.png)
 
   ![CreacionUsuario_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_3.png)
 
