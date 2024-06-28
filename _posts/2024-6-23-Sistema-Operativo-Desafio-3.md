@@ -11,7 +11,7 @@ actividad se centrará en la creación y gestión de usuarios, grupos y polític
 
 - [1. Consigna del desafío](#item1)
 - [2. Configuración de los escenarios](#item2)
-- [3.Unidades organizativas, usuario y grupos de seguridad en Active Directory](#item3)
+- [3. Unidades organizativas, usuario y grupos de seguridad en Active Directory](#item3)
 - [4. Políticas de Grupo (GPOs)](#item4)
 - [5. Permisos de Acceso a Recursos](#item5)
 - [6. Demo](#item6)
@@ -81,7 +81,7 @@ Implementación de políticas de roles comunes en Windows Server.
   * Solo el grupo Ventas tiene permisos de lectura y escritura.
 
 <a name="item2"></a>
-## 2. Configuración de los escenarios #############
+## 2. Configuración de los escenarios
 
 ### Configuraciones básicas del Servidor - Configuración de la IP
 
@@ -104,7 +104,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 * Ingresa la máscara de subred en el campo correspondiente. Por ejemplo, "255.255.255.0". Recordemos que siempre debe estar configurada la
   mascara para que nuestra máquina virtual reconozca en la red que está y de esta manera logre comunicarse con los demás dispositivos de
   nuestra LAN.
-* Ingresa la puerta de enlace predeterminada en el campo "Puerta de enlace". Puede ser la dirección IP del router en tu red.
+* Ingresa la puerta de enlace predeterminada en el campo *"Puerta de enlace"*. Puede ser la dirección IP del router en tu red.
 * Ingresa las direcciones de servidor DNS si es necesario.
 
   ![Configuracion_IP]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/Configuracion_IP.png) 
@@ -115,15 +115,15 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 * Presiona Win + X y selecciona "Administrador del Servidor".
 
 **Paso 2:** Agrega el Rol de Servicios de Dominio de Active Directory
-* En el Administrador del Servidor, selecciona "Agregar roles y características".
+* En el Administrador del Servidor, selecciona *"Agregar roles y características"*.
 
   ![ConfiguracionAD_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_1.png) 
   
-* En el asistente para agregar roles, selecciona "Servicios de Rol" y elige "Servicios de Dominio de Active Directory".
+* En el asistente para agregar roles, selecciona *"Servicios de Rol"* y elige *"Servicios de Dominio de Active Directory"*.
 
   ![ConfiguracionAD_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_2.png) 
   
-* Haz clic en "Siguiente" y luego en "Instalar". Sigue los pasos para completar la instalación del rol.
+* Haz clic en *"Siguiente"* y luego en *"Instalar"*. Sigue los pasos para completar la instalación del rol.
 
 ### Configuraciones de Dominio de Active Directory
 
@@ -151,11 +151,11 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 
 **Paso 2:** Configura DNS
 * Si aún no tienes el rol de Servidor DNS instalado, el asistente te pedirá instalarlo. Acepta la instalación automática.
-* Configura DNS según tus preferencias y haz clic en "Siguiente".
+* Configura DNS según tus preferencias y haz clic en *"Siguiente"*.
 
 **Paso 3:** Configura la Contraseña de Modo de Restauración de Servicio (DSRM)
-* Configura la contraseña de modo de restauración de servicio (DSRM) y haz clic en "Siguiente".
-* Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
+* Configura la contraseña de modo de restauración de servicio (DSRM) y haz clic en *"Siguiente"*.
+* Revisa la configuración en la página de resumen y haz clic en *"Siguiente"* para iniciar la instalación.
 
 **Paso 4:** Completa la Instalación
 * Después de la instalación, el servidor se reiniciará automáticamente.
@@ -173,7 +173,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
     ![ConfiguracionDNS_Cliente]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionDNS_Cliente.png)
 
 **Paso 2:** Configuración del Dominio
-* Desde el panel izquierdo, en "Este Equipo", hacer clic derecho y doble clic en "Propiedades"
+* Desde el panel izquierdo, en *"Este Equipo"*, hacer clic derecho y doble clic en *"Propiedades"*
 
     ![ConfigDeDominioEnCliente_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfigDeDominioEnCliente_1.png)
 
@@ -204,7 +204,7 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 
 ### Creación de Unidades Organizativas
 A continuación, de acuerto a la especificación de nuestro escenario, proseguiremos a crear tres unidades organizativas, 
-dentro de del domino *techsolutions*Ñ Ventas, Desarrolladores, RRHH.
+dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
 **Paso 1:** Accede al Administrador de Active Directory
 * "Administrador de Active Directory" en tu máquina virtual.
@@ -263,6 +263,11 @@ dentro de del domino *techsolutions*Ñ Ventas, Desarrolladores, RRHH.
 
     ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
 
+* La configuración de Grupos y usuarios para clas unidades organizativas Ventas y RRHH lo
+  mostramos a continuación
+
+  IMAGEN DE VENTAS
+  IMAGEN DE RRHH
 
 <a name="item4"></a>
 ## 4. Políticas de Grupo (GPOs)
@@ -273,7 +278,7 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 ### Interfaz de configuración
 
 **Paso 1:** Posicionarnos en la interfaz en donde editaremos las GPO requeridas
-* Desde nuestro Servidor, haciendo clic en Windows, escribimos "Gestión de Políticas de Grupo". 
+* Desde nuestro Servidor, haciendo clic en Windows, escribimos *"Gestión de Políticas de Grupo"*. 
 
   ![GPO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_1.png)
 
@@ -328,32 +333,32 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
   ![GPO_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_8.png)
 
 * Para la configuración de la longitud de Contraseñas a 12 caracteres, desde el mismo panel derecho anterior,
-  seleccionamos *Longitud Mínima de Password*. La edición de esta configuración la mostramos en la imagen que
+  seleccionamos *"Longitud Mínima de Password"*. La edición de esta configuración la mostramos en la imagen que
   sigue
 
   ![GPO_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_9.png)
 
-* Para la configuración de políticas para generar una "Contraseña fuerte" , desde este panel derecho,
-  seleccionamos *Requerimientos para generar una contraseña segura*. La configuración requerida queda
+* Para la configuración de políticas para generar una *"Contraseña fuerte"*, desde este panel derecho,
+  seleccionamos **Requerimientos para generar una contraseña segura"*. La configuración requerida queda
   ilustrada como se observa en la imagen
 
   ![GPO_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_10.png)
 
 
-  **Paso 2:** GPO para Bloqueo de Pantalla  
-  * Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
+ **Paso 2:** GPO para Bloqueo de Pantalla  
+ * Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
     
-  > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
+   > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
       
-  * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el
+ * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el
     protector de pantalla"*.       
 
-    ![GPO_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_11.png)
+   ![GPO_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_11.png)
 
-  * Selecciona ¨*"Habilitada"* y luego en el cuadro *"Segundos"* introduce el valor correspondiente a 10 minutos (600 segundos).
+* Selecciona ¨*"Habilitada"* y luego en el cuadro *"Segundos"* introduce el valor correspondiente a 10 minutos (600 segundos).
     Haz clic en *"Aplicar"*, luego "Aceptar"*.
 
-    ![GPO_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_12.png)
+  ![GPO_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_12.png)
 
 
 ###  GPO para el Departamento de Desarrollo
