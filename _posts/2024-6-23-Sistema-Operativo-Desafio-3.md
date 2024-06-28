@@ -390,9 +390,7 @@ oportunidad de trabajar con ambas.
 
 #### GPO para la instalación automática de desarrollo: Visual Studio Code
 
-La diferencia principal entre utilizar un archivo .exe y un archivo .msi para la instalación y distribución de software
-radica en la capacidad de gestión y configuración que proporciona el formato MSI (Microsoft Installer). Las diferencias
-claves en estos son:
+La diferencia principal entre utilizar un archivo .exe y un archivo .msi para la instalación y distribución de software radica en la capacidad de gestión y configuración que proporciona el formato MSI (Microsoft Installer). Las diferencias claves en estos son:
 
 **Archivo .exe**
 
@@ -434,22 +432,26 @@ claves en estos son:
 - **Compatibilidad:** A menudo, los archivos MSI están optimizados para integrarse mejor con las herramientas y políticas de gestión de sistemas
   en entornos corporativos.
 
-En resumen, mientras que un archivo **.exe** puede ser adecuado para instalaciones individuales y pequeños entornos, un archivo **.msi** ofrece
-un nivel más alto de control, gestión y automatización en entornos empresariales, lo que facilita la distribución y el mantenimiento del software
-en una red de computadoras.
+En resumen, mientras que un archivo **.exe** puede ser adecuado para instalaciones individuales y pequeños entornos, un archivo **.msi** ofrece un nivel más alto de control, gestión y automatización en entornos empresariales, lo que facilita la distribución y el mantenimiento del software en una red de computadoras.
 
-Dicho todo lo anterior y dado que los archivos de descarga para la intalacion de Visual Studio Code desde la página oficial son **.exe**,
-debemos realizar la conversión de estos a **.msi**.
+Dicho todo lo anterior y dado que los archivos de descarga para la intalacion de Visual Studio Code desde la página oficial son **.exe**, debemos realizar la conversión de estos a **.msi**.
 
 **Paso 1:** Obtener el archivo .msi de Visual Studio Code
 * Ve al sitio oficial de Visual Studio Code y descarga el archivo .exe de la versión que deseas instalar.
 
   [Visual Studio Code .exe Download](https://code.visualstudio.com/download)
 
-* Descarga una herramienta como [Exe to msi converter free](https://apps.microsoft.com/detail/xp9cwggd5rxjwm?amp%3Bgl=US&hl=en-us&gl=CL). Esta
-  te ayudará  a convertir un archivo **.exe** a **.msi**.   
+  ![VSC_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/VSC_1.png)
+
+* Descarga una herramienta como [Exe to msi converter free](https://apps.microsoft.com/detail/xp9cwggd5rxjwm?amp%3Bgl=US&hl=en-us&gl=CL).
+
+  ![VSC_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/VSC_2.png)
+
+  Esta nos ayuda a convertir un archivo **.exe** a **.msi**.   
        
-               IMAGEN
+  ![VSC_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/VSC_3.png)
+
+  ![VSC_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/VSC_4.png)
   
 **Paso 2:** Preparar un recurso compartido
 * En el servidor, creamos una carpeta compartida, de acceso exclusivo al grupo de Desarrolladores que fueron creados en la Sección 3, que hemos
