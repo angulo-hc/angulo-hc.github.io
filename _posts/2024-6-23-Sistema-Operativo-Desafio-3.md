@@ -168,8 +168,8 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 ### Configuraciones en dispositivos Clientes
 
 **Paso 1:** Configuración de IP del Servidor DNS.
-* Siguiendo los mismos pasos de configuración de IP del Servidor con rol Active Directory, configuramos la IP del DNS
-  de nuestra máquina cliente. Esta IP debe corresponderse con la IP del Servidor con rol Active Directory de la que el
+* Siguiendo los mismos pasos de configuración de IP del Servidor con rol *Active Directory¨*, configuramos la IP del DNS
+  de nuestra máquina cliente. Esta IP debe corresponderse con la IP del Servidor con rol *Active Directory* de la que el
   dispositivo es cliente.
   
   ![ConfiguracionDNS_Cliente]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionDNS_Cliente.png)
@@ -204,23 +204,26 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
 <a name="item3"></a>
 ## 3. Unidades organizativas, usuario y grupos de seguridad en Active Directory
 
-### Creación de Unidades Organizativas
+### Unidades Organizativas
 A continuación, de acuerto a la especificación de nuestro escenario, proseguiremos a crear tres unidades organizativas, 
 dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
-**Paso 1:** Accede al Administrador de Active Directory
-* "Administrador de Active Directory"* en tu máquina virtual.
+**Paso 1:** Creación de Unidades Organizativas
+* Desde el *Serve Manager*
 
-    ![ConfiguracionUO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_1.png)
+  > Server Manager > Tools > Active Directory Users and Computers
+
+  ![ConfiguracionUO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_1.png)
 
 **Paso 2:** Crear Unidades Organizativas (UO)
 * En el panel izquierdo, selecciona el nombre de tu dominio en la estructura del árbol.
 
-    ![ConfiguracionUO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_2.png)
+  ![ConfiguracionUO_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_2.png)
 
-* Haz clic derecho y elige "Nueva" -> "Unidad Organizativa".
+* Haz clic derecho y busca ```New Organizational Unit ``` . Hacer doble clic en esta última, ingresar
+  el nombre de la Unidad Oragnizativa a crear, seguidamente haz clic en ```Ok```
 
-    ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
+![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
   
 * Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en *escenario* de desafío, asigna una *UO*.
 
