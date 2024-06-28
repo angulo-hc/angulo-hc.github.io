@@ -339,33 +339,23 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
 
   ![GPO_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_10.png)
 
-  
- 
 
-  
-**Paso 2:** GPO para Bloqueo de Pantalla  
-* Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
+  **Paso 2:** GPO para Bloqueo de Pantalla  
+  * Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
     
   > Configuración de usuario > Plantillas administrativas > Panel de control > Personalización
       
-* En el panel derecho, busca y haz doble clic en la política denominada "Esperar tiempo antes de activarse el protector
-     de pantalla".       
+  * En el panel derecho, busca y haz doble clic en la política denominada *"Esperar tiempo antes de activarse el protector
+     de pantalla"*.       
 
-  IMAGEN 10
+    ![GPO_11]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_11.png)
 
-* Selecciona "Habilitada" y luego en el cuadro "Segundos" introduce el valor correspondiente a 10 minutos (600 segundos).
-    Haz clic en "Aplicar", luego "Aceptar".
+  * Selecciona ¨*"Habilitada"* y luego en el cuadro *"Segundos"* introduce el valor correspondiente a 10 minutos (600 segundos).
+    Haz clic en *"Aplicar"*, luego "Aceptar"*.
 
-  IMAGEN 11
+    ![GPO_12]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_12.png)
 
-**Paso 2:** Habilitar el Protector de Pantalla
-* En la misma ruta del paso anterior, busca y haz doble clic en la política "Habilitar protector de pantalla".
 
-  IMAGEN 12
-
-* Selecciona "Habilitada" y haz clic en "Aplicar", luego "Aceptar".
-
-  IMAGEN 13
   
 **Paso 3** Proteger con Contraseña el Protector de Pantalla  
     
