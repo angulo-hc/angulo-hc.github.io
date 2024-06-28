@@ -141,12 +141,12 @@ de manera local a la red donde está alojado. Nos estamos refiriendo a la IP loc
   ![ConfiguracionAD_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_5.png) 
 
 * En la página "Funcionalidad del bosque", elige el nivel de funcionalidad adecuado para tus necesidades y haz clic en 
-  "Siguiente".
+  *"Siguiente"*.
 
   ![ConfiguracionAD_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionAD_6.png)
   
 * En la página "Ubicación de archivos de base de datos", elige la ubicación de los archivos de base de datos de AD DS y haz 
-  clic en "Siguiente".
+  clic en *"Siguiente"*.
 * Revisa la configuración en la página de resumen y haz clic en "Siguiente" para iniciar la instalación.
 
 **Paso 2:** Configura DNS
@@ -207,7 +207,7 @@ A continuación, de acuerto a la especificación de nuestro escenario, proseguir
 dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
 **Paso 1:** Accede al Administrador de Active Directory
-* "Administrador de Active Directory" en tu máquina virtual.
+* "Administrador de Active Directory"* en tu máquina virtual.
 
     ![ConfiguracionUO_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_1.png)
 
@@ -230,7 +230,7 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 ### Creación de usuarios y grupos de seguridad
 
 **Paso 1:** Crear usuarios
-* Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la UO, 
+* Dentro de cada *UO*, crea usuarios según la estructura organizativa. Haz clic derecho en la *UO*, 
   selecciona "Nuevo" y elige Usuario.
 
     ![CreacionUsuario_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/CreacionUsuario_1.png) 
@@ -263,11 +263,15 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
     ![UsuariosEnGrupos_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UsuariosEnGrupos_5.png)
 
-* La configuración de Grupos y usuarios para clas unidades organizativas Ventas y RRHH lo
-  mostramos a continuación
+* La configuración de Grupos y usuarios para las Unidades Organizativas Desarrolladores, Ventas y RRHH
+  lo mostramos a continuación
 
-  IMAGEN DE VENTAS
-  IMAGEN DE RRHH
+ ![UO_Usuarios_Grupos_1]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_1.png)
+
+ ![UO_Usuarios_Grupos_2]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_2.png)
+
+ ![UO_Usuarios_Grupos_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/UO_Usuarios_Grupos_3.png)
+
 
 <a name="item4"></a>
 ## 4. Políticas de Grupo (GPOs)
