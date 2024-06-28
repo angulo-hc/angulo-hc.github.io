@@ -223,14 +223,14 @@ dentro de del domino *techsolutions*: Ventas, Desarrolladores, RRHH.
 
 * Haz clic derecho y busca
  
-> New > Organizational Unit
+  > New > Organizational Unit
+
+  ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
 
 * Haz doble clic en esta última, ingresa el nombre de la Unidad Oragnizativa a crear, seguidamente
    haz clic en ```Ok```
 
-   ![ConfiguracionUO_3]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_3.png)
-
-   ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
+  ![ConfiguracionUO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/ConfiguracionUO_4.png)
   
 * Por cada departamento, *RRHH*, *Desarrolladores*, *Ventas*, descrito en [Escenarios del desafío](#escenario)
   del desafío, se asigna una *UO*.
