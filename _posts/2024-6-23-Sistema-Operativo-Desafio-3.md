@@ -305,20 +305,44 @@ A continuación, asignaremos las GPO a configuraciones específicas de acuerdo a
   ![GPO_4]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_4.png)
 
 * A continuación, una vez creada la GPO *"password"*, hacemos clic derecho en esta, desde el panel izquierdo y
-  luego clic en la opción Editar
+  luego clic en la opción *Editar*
 
   ![GPO_5]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_5.png)
 
   ![GPO_6]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_6.png)
 
-* En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar politícas,
+* En esta última interfaz que se despliega tendremos todos los parámetros que existen para poder agregar políticas,
   restricciones, etc.
 
-   IMAGEN 6
+  ![GPO_7]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_7.png)
 
-   Veemos que tenemos configuraciones a nivel de computadora y a nivel de usuarios.
+  Vemos que tenemos configuraciones a nivel de computadora y a nivel de usuario.
 
+* En el editor de Administración de Políticas de Grupo que vemos desplegado en la última imagen, navega hasta 
 
+  > Configuración de Computadora > Políticas > Configuraciones de Windows > Configuraciones de Seguridad 
+  > Políticas de Cuenta > Políticas de Password
+
+* Seleccionamos *Reciclaje del Historial de Contraseñas*
+  
+  ![GPO_8]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_8.png)
+
+* Para la configuración de la longitud de Contraseñas a 12 caracteres, desde el mismo panel derecho anterior,
+  seleccionamos *Longitud Mínima de Password*. La edición de esta configuración la mostramos en la imagen que
+  sigue
+
+  ![GPO_9]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_9.png)
+
+* Para la configuración de políticas para generar una "Contraseña fuerte" , desde este panel derecho,
+  seleccionamos *Requerimientos para generar una contraseña segura*. La configuración requerida queda
+  ilustrada como se observa en la imagen
+
+  ![GPO_10]({{ site.baseurl }}/images/Sistema_Operativo/Desafio_3/GPO_10.png)
+
+  
+ 
+
+  
 **Paso 2:** GPO para Bloqueo de Pantalla  
 * Configurar el Tiempo de Inactividad. En el Editor de Administración de Políticas de Grupo, navega hasta
     
